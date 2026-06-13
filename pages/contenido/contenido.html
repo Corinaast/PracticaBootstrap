@@ -1,275 +1,284 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-    <title>Contenido de Aprendizaje - ESPE</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #333;
-            background: linear-gradient(135deg, #f0f8ff 0%, #e0ffff 100%);
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-
-        header {
-            text-align: center;
-            padding: 20px 10px;
-            background-color: #ffffff;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        header img {
-            max-width: 250px;
-            height: auto;
-        }
-
-        nav {
-            background-color: #008B8B;
-            padding: 15px;
-            text-align: center;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        nav a {
-            text-decoration: none;
-            color: white;
-            font-weight: 500;
-            transition: all 0.3s;
-            padding: 8px 12px;
-            border-radius: 4px;
-        }
-
-        nav a:hover {
-            background-color: rgba(255, 255, 255, 0.2);
-            color: #e0ffff;
-        }
-
-        h1 {
-            font-size: 2.5em;
-            color: #008B8B;
-            text-align: center;
-            margin: 30px 0 20px;
-            font-weight: 700;
-        }
-
-        h2 {
-            font-size: 1.8em;
-            color: #008B8B;
-            text-align: center;
-            margin: 25px 0 15px;
-            font-weight: 600;
-            border-bottom: 3px solid #008B8B;
-            padding-bottom: 10px;
-        }
-
-        h3 {
-            font-size: 1.3em;
-            color: #006f6f;
-            margin: 15px 0 10px;
-        }
-
-        main {
-            flex: 1;
-            padding: 30px 20px;
-            max-width: 1000px;
-            margin: 0 auto;
-            width: 100%;
-        }
-
-        section {
-            background-color: white;
-            border-radius: 12px;
-            padding: 25px;
-            margin-bottom: 30px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        article {
-            margin: 20px 0;
-            padding: 15px;
-            border-left: 4px solid #008B8B;
-            background-color: #f8feff;
-            border-radius: 4px;
-        }
-
-        article h3 {
-            color: #008B8B;
-            margin-top: 0;
-        }
-
-        article p {
-            line-height: 1.6;
-            color: #555;
-        }
-
-        aside {
-            background-color: #e0ffff;
-            border-radius: 8px;
-            padding: 20px;
-            margin: 20px 0;
-            border: 2px solid #008B8B;
-        }
-
-        aside h2 {
-            border: none;
-            padding: 0;
-            margin-top: 0;
-        }
-
-        ol, ul {
-            margin: 20px 0 20px 30px;
-            line-height: 1.8;
-        }
-
-        li {
-            margin-bottom: 10px;
-            font-size: 1.05em;
-            color: #555;
-        }
-
-        footer {
-            background-color: #008B8B;
-            color: white;
-            text-align: center;
-            padding: 30px 20px;
-            margin-top: 40px;
-        }
-
-        footer h3 {
-            color: #e0ffff;
-            margin-bottom: 20px;
-        }
-
-        footer a {
-            color: #e0ffff;
-            text-decoration: none;
-            margin: 0 15px;
-            transition: color 0.3s;
-        }
-
-        footer a:hover {
-            color: white;
-        }
-
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin: 15px 0;
-            flex-wrap: wrap;
-        }
-
-        .social-icons img {
-            width: 28px;
-            height: 28px;
-            transition: transform 0.3s;
-        }
-
-        .social-icons a {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            margin: 0;
-        }
-
-        .social-icons a:hover img {
-            transform: scale(1.2);
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contenido Académico - Corina Acosta | ESPE</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="../../css/general.css">
 </head>
-
 <body>
-    <header>
-        <img src="../../multimedia/img/imagenejemploespe.png" alt="ESPE" width="300">
-        <p><strong>Universidad de las Fuerzas Armadas ESPE</strong></p>
-    </header>
 
-    <nav>
-        <a href="../../index.html">Home</a>
-        <a href="../sobremi/sobremi.html">Sobre mí</a>
-        <a href="../multimedia/multimedia.html">Presentación</a>
-        <a href="../horario/horario.html">Horario</a>
-        <a href="#">Contenido</a>
-        <a href="../cto/contacto.html">Contacto</a>
-        <a href="../cto/buzon.html">Buzón</a>
-        <a href="../proyectos/proyectos.html">Proyectos</a>
-        <a href="../buscar/buscar.html">Buscar</a>
-        <a href="../login/login.html" style="background-color: #fff; color: #008B8B; font-weight: 700;">Login</a>
-    </nav>
-    <main>
+  <!-- ============================================================ NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../../index.html">
+        <i class="fas fa-user-graduate"></i> Corina Acosta
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="../../index.html">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sobre mí</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../sobremi/sobremi.html">Sobre mí</a></li>
+              <li><a class="dropdown-item" href="../habilidades.html">Habilidades</a></li>
+              <li><a class="dropdown-item" href="../metas.html">Metas</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="../multimedia/multimedia.html">Presentación</a></li>
+          <li class="nav-item"><a class="nav-link" href="../horario/horario.html">Horario</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contenido.html">Contenido</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Formularios</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../cto/contacto.html">Contacto</a></li>
+              <li><a class="dropdown-item" href="../cto/buzon.html">Buzón</a></li>
+              <li><a class="dropdown-item" href="../buscar/buscar.html">Búsqueda</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Proyectos</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../proyectos/proyectos.html">Proyectos</a></li>
+              <li><a class="dropdown-item" href="../proyectos-futuros.html">Proyectos Futuros</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="../proyeccion.html">Proyección</a></li>
+          <li class="nav-item"><a class="nav-link" href="../login/login.html">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-        <section>
-            <h2>Plan de aprendizaje en HTML</h2>
-            <ol>
-                <li>Configurar el entorno de desarrollo</li>
-                <li>Crear el archivo .html y estructurar el documento</li>
-                <li>Aplicar etiquetas semánticas correctamente</li>
-                <li>Guardar y abrir en el navegador</li>
-            </ol>
+  <!-- ============================================================ HERO -->
+  <div class="hero-banner">
+    <div class="container text-center text-white">
+      <h1 class="display-4 fw-bold mb-3">
+        <i class="fas fa-book-open me-2"></i>Contenido Académico
+      </h1>
+      <p class="lead">Plan de aprendizaje, publicaciones e información adicional</p>
+    </div>
+  </div>
+
+  <!-- ============================================================ MAIN -->
+  <main class="container my-5">
+    <div class="row g-4">
+
+      <!-- Columna principal -->
+      <div class="col-12 col-lg-8">
+
+        <!-- Plan de aprendizaje -->
+        <section class="mb-5">
+          <h2 class="mb-4"><i class="fas fa-list-check me-2"></i>Plan de Aprendizaje en HTML</h2>
+          <div class="card shadow-lg border-0">
+            <div class="card-header">
+              <h5 class="mb-0"><i class="fas fa-road me-2"></i>Ruta de Aprendizaje</h5>
+            </div>
+            <div class="card-body">
+              <ol class="list-group list-group-numbered list-group-flush">
+                <li class="list-group-item d-flex gap-3 align-items-start">
+                  <div>
+                    <strong>Configurar el entorno de desarrollo</strong>
+                    <p class="mb-0 text-muted small">Editor de código, extensiones y configuración inicial.</p>
+                  </div>
+                </li>
+                <li class="list-group-item d-flex gap-3 align-items-start">
+                  <div>
+                    <strong>Crear el archivo .html y estructurar el documento</strong>
+                    <p class="mb-0 text-muted small">DOCTYPE, html, head y body correctamente.</p>
+                  </div>
+                </li>
+                <li class="list-group-item d-flex gap-3 align-items-start">
+                  <div>
+                    <strong>Aplicar etiquetas semánticas correctamente</strong>
+                    <p class="mb-0 text-muted small">header, main, footer, section, article, aside, nav.</p>
+                  </div>
+                </li>
+                <li class="list-group-item d-flex gap-3 align-items-start">
+                  <div>
+                    <strong>CSS3 Avanzado</strong>
+                    <p class="mb-0 text-muted small">Flexbox, Grid, animaciones y transiciones.</p>
+                  </div>
+                </li>
+                <li class="list-group-item d-flex gap-3 align-items-start">
+                  <div>
+                    <strong>Bootstrap Framework</strong>
+                    <p class="mb-0 text-muted small">Componentes responsivos, grid system y utilities.</p>
+                  </div>
+                </li>
+                <li class="list-group-item d-flex gap-3 align-items-start">
+                  <div>
+                    <strong>JavaScript Esencial</strong>
+                    <p class="mb-0 text-muted small">Variables, funciones, DOM, eventos y validación.</p>
+                  </div>
+                </li>
+                <li class="list-group-item d-flex gap-3 align-items-start">
+                  <div>
+                    <strong>Bases de Datos</strong>
+                    <p class="mb-0 text-muted small">SQL, normalización y consultas básicas.</p>
+                  </div>
+                </li>
+                <li class="list-group-item d-flex gap-3 align-items-start">
+                  <div>
+                    <strong>Seguridad Web</strong>
+                    <p class="mb-0 text-muted small">Validación, autenticación, XSS y OWASP Top 10.</p>
+                  </div>
+                </li>
+              </ol>
+            </div>
+          </div>
         </section>
 
+        <!-- Publicaciones -->
         <section>
-            <h2>Publicaciones</h2>
+          <h2 class="mb-4"><i class="fas fa-newspaper me-2"></i>Publicaciones y Documentos</h2>
+          <div class="accordion shadow-lg" id="publicaciones">
 
-            <article>
-                <h3>¿Por qué aprender HTML?</h3>
-                <p>HTML permite crear la estructura de las páginas web.</p>
-            </article>
+            <!-- Publicación 1 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#pub1" aria-expanded="true">
+                  <i class="fas fa-file-pdf me-2 text-danger"></i>
+                  Artículo: Introducción a Bootstrap 5
+                  <span class="badge bg-primary ms-auto me-2">2026</span>
+                </button>
+              </h2>
+              <div id="pub1" class="accordion-collapse collapse show" data-bs-parent="#publicaciones">
+                <div class="accordion-body">
+                  <p><strong><i class="fas fa-calendar me-2"></i>Fecha:</strong> Marzo 2026</p>
+                  <p><strong><i class="fas fa-tag me-2"></i>Categoría:</strong>
+                    <span class="badge bg-primary">Bootstrap</span>
+                    <span class="badge bg-secondary">Diseño Web</span>
+                  </p>
+                  <p>Guía completa sobre los cambios principales en Bootstrap 5, componentes clave y mejores prácticas para el desarrollo responsivo. Incluye ejemplos de grid, componentes y utilities.</p>
+                  <a href="#" class="btn btn-sm btn-primary">
+                    <i class="fas fa-download me-1"></i>Descargar PDF
+                  </a>
+                </div>
+              </div>
+            </div>
 
-            <article>
-                <h3>Importancia de la semántica en HTML</h3>
-                <p>El HTML semántico mejora la organización y accesibilidad de las páginas web.</p>
-            </article>
+            <!-- Publicación 2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pub2">
+                  <i class="fas fa-file-pdf me-2 text-danger"></i>
+                  Guía: Validación HTML5 y JavaScript
+                  <span class="badge bg-primary ms-auto me-2">2026</span>
+                </button>
+              </h2>
+              <div id="pub2" class="accordion-collapse collapse" data-bs-parent="#publicaciones">
+                <div class="accordion-body">
+                  <p><strong><i class="fas fa-calendar me-2"></i>Fecha:</strong> Febrero 2026</p>
+                  <p><strong><i class="fas fa-tag me-2"></i>Categoría:</strong>
+                    <span class="badge bg-success">JavaScript</span>
+                    <span class="badge bg-warning text-dark">HTML5</span>
+                  </p>
+                  <p>Documento detallado sobre validación de formularios usando HTML5 y JavaScript puro, incluyendo patrones regex y mejores prácticas de accesibilidad y seguridad.</p>
+                  <a href="#" class="btn btn-sm btn-primary">
+                    <i class="fas fa-download me-1"></i>Descargar PDF
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Publicación 3 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pub3">
+                  <i class="fab fa-github me-2"></i>
+                  Repositorio: Proyectos de Clase
+                  <span class="badge bg-dark ms-auto me-2">GitHub</span>
+                </button>
+              </h2>
+              <div id="pub3" class="accordion-collapse collapse" data-bs-parent="#publicaciones">
+                <div class="accordion-body">
+                  <p><strong><i class="fas fa-link me-2"></i>Acceso:</strong> GitHub</p>
+                  <p><strong><i class="fas fa-tag me-2"></i>Categoría:</strong>
+                    <span class="badge bg-dark">HTML5</span>
+                    <span class="badge bg-primary">CSS3</span>
+                    <span class="badge bg-warning text-dark">Bootstrap</span>
+                  </p>
+                  <p>Repositorio con todos los proyectos realizados durante el semestre, organizados por tema y con ejemplos funcionales y documentación correspondiente.</p>
+                  <a href="https://github.com/Corina-ac" target="_blank" class="btn btn-sm btn-primary">
+                    <i class="fab fa-github me-1"></i>Ver en GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- /accordion -->
         </section>
 
+      </div><!-- /col-lg-8 -->
 
-        <aside>
-            <h2>Información adicional</h2>
-            <p>
-                El uso adecuado de estructuras semánticas en HTML permite desarrollar sitios web
-                más accesibles, escalables y comprensibles tanto para usuarios como para desarrolladores.
-            </p>
-        </aside>
-
-    </main>
-
-    <footer>
-        <h3>Encuéntrame en mis redes sociales</h3>
-        <div class="social-icons">
-            <a href="https://www.linkedin.com/in/corina-alejandra-acosta-oliva-1555ba28a" target="_blank">
-                <img src="../../multimedia/img/linkedin.ico" alt="LinkedIn">
-                <span>LinkedIn</span>
-            </a>
-            <a href="https://www.facebook.com/" target="_blank">
-                <img src="../../multimedia/img/facebook.ico" alt="Facebook">
-                <span>Facebook</span>
-            </a>
-            <a href="https://www.instagram.com/" target="_blank">
-                <img src="../../multimedia/img/instagram.ico" alt="Instagram">
-                <span>Instagram</span>
-            </a>
-            <a href="https://www.tiktok.com/" target="_blank">
-                <img src="../../multimedia/img/tiktok.ico" alt="TikTok">
-                <span>TikTok</span>
-            </a>
+      <!-- Aside -->
+      <aside class="col-12 col-lg-4">
+        <div class="card shadow-lg border-0 mb-4" style="border-left: 5px solid #008B8B !important; border-radius: 12px;">
+          <div class="card-header">
+            <h5 class="mb-0"><i class="fas fa-info-circle me-2"></i>Información Adicional</h5>
+          </div>
+          <div class="card-body" style="background-color: #f0fff4;">
+            <p>El uso adecuado de estructuras semánticas en HTML permite desarrollar sitios web más <strong>accesibles</strong>, <strong>escalables</strong> y comprensibles tanto para usuarios como para desarrolladores.</p>
+            <ul class="list-unstyled mt-3">
+              <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Accesibilidad WCAG 2.1</li>
+              <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>SEO optimizado</li>
+              <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Mobile First</li>
+              <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Código limpio y semántico</li>
+            </ul>
+          </div>
         </div>
-        <p style="margin-top: 20px; border-top: 1px solid #e0ffff; padding-top: 15px;">
-            &copy; 2025 - Universidad de las Fuerzas Armadas ESPE | Laboratorio HTML5 y Formularios
-        </p>
-    </footer>
-</body>
 
+        <div class="card shadow-lg border-0">
+          <div class="card-header">
+            <h5 class="mb-0"><i class="fas fa-star me-2"></i>Tecnologías del Semestre</h5>
+          </div>
+          <div class="card-body">
+            <div class="d-flex flex-wrap gap-2">
+              <span class="badge bg-primary">HTML5</span>
+              <span class="badge bg-info text-dark">CSS3</span>
+              <span class="badge bg-warning text-dark">Bootstrap 5</span>
+              <span class="badge bg-success">JavaScript</span>
+              <span class="badge bg-secondary">SQL</span>
+              <span class="badge bg-danger">PHP</span>
+              <span class="badge bg-dark">Git / GitHub</span>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+    </div><!-- /row -->
+  </main>
+
+  <!-- ============================================================ FOOTER -->
+  <footer class="footer mt-5">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-12 col-md-6 mb-3 mb-md-0">
+          <h5><i class="fas fa-graduation-cap me-2"></i>Educación</h5>
+          <p>Universidad de las Fuerzas Armadas ESPE<br>Ingeniería en Tecnologías de la Información<br>Ecuador 🇪🇨</p>
+        </div>
+        <div class="col-12 col-md-6">
+          <h5><i class="fas fa-share-alt me-2"></i>Redes Sociales</h5>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/corina-alejandra-acosta-oliva-1555ba28a" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://github.com/Corina-ac" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <p class="text-center mb-0">&copy; 2026 Corina Alejandra Acosta Oliva &mdash; Fundamentos Web ESPE</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>

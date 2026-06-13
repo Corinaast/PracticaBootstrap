@@ -1,0 +1,16 @@
+/* ================================================
+   INDEX CSS
+   Estilos específicos de la página principal
+   ================================================ */
+
+/* Tarjetas de características de la sección principal */
+.feature-card {
+  min-height: 160px;
+  text-align: center;
+}
+
+/* Imagen de perfil en el hero de inicio */
+.profile-img {
+  border: 5px solid rgba(255,255,255,0.4);
+  box-shadow: 0 8px 24px rgba(0,139,139,0.3);
+}

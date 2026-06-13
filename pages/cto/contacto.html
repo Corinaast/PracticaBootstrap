@@ -1,357 +1,410 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-    <title>Contacto</title>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            color: #333;
-            background-color: #f5f5f5;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            text-align: center;
-            padding: 15px;
-            background-color: #fff;
-            border-bottom: 1px solid #ccc;
-        }
-
-        header img {
-            max-width: 200px;
-        }
-
-        nav {
-            background-color: #008B8B;
-            padding: 10px;
-            text-align: center;
-        }
-
-        nav a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: white;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        h1, h2 {
-            color: #008B8B;
-            text-align: center;
-        }
-
-        main {
-            padding: 20px;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        section {
-            background-color: white;
-            padding: 20px;
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
-        }
-
-        label {
-            display: block;
-            margin-top: 10px;
-            margin-bottom: 4px;
-            font-weight: bold;
-        }
-
-        input[type="text"],
-        input[type="email"],
-        input[type="password"],
-        input[type="date"],
-        input[type="time"],
-        input[type="tel"],
-        select,
-        textarea {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            font-size: 1em;
-            font-family: inherit;
-            box-sizing: border-box;
-        }
-
-        textarea {
-            resize: vertical;
-            min-height: 100px;
-        }
-
-        fieldset {
-            border: 1px solid #ccc;
-            padding: 15px;
-            margin: 15px 0;
-        }
-
-        fieldset legend {
-            font-weight: bold;
-            color: #008B8B;
-        }
-
-        fieldset label {
-            font-weight: normal;
-            margin: 6px 0;
-            cursor: pointer;
-        }
-
-        button {
-            width: 100%;
-            padding: 10px;
-            background-color: #008B8B;
-            color: white;
-            border: none;
-            font-size: 1em;
-            cursor: pointer;
-            margin-top: 8px;
-        }
-
-        button:hover {
-            background-color: #006f6f;
-        }
-
-        .form-group {
-            margin-bottom: 15px;
-        }
-
-        footer {
-            background-color: #008B8B;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            margin-top: 20px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto y Formularios - Corina Acosta | ESPE</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="../../css/general.css">
+  <link rel="stylesheet" href="../../css/contacto.css">
 </head>
-
 <body>
-    <header>
-        <img src="../../multimedia/img/imagenejemploespe.png" alt="ESPE" width="300">
-        <p><strong>Universidad de las Fuerzas Armadas ESPE</strong></p>
-    </header>
 
-    <nav>
-        <a href="../../index.html">Home</a>
-        <a href="../sobremi/sobremi.html">Sobre mí</a>
-        <a href="../multimedia/multimedia.html">Presentación</a>
-        <a href="../horario/horario.html">Horario</a>
-        <a href="../contenido/contenido.html">Contenido</a>
-        <a href="#">Contacto</a>
-        <a href="buzon.html">Buzón</a>
-        <a href="../proyectos/proyectos.html">Proyectos</a>
-        <a href="../buscar/buscar.html">Buscar</a>
-    </nav>
+  <!-- ============================================================ NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../../index.html">
+        <i class="fas fa-user-graduate"></i> Corina Acosta
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="../../index.html">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sobre mí</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../sobremi/sobremi.html">Sobre mí</a></li>
+              <li><a class="dropdown-item" href="../habilidades.html">Habilidades</a></li>
+              <li><a class="dropdown-item" href="../metas.html">Metas</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="../multimedia/multimedia.html">Presentación</a></li>
+          <li class="nav-item"><a class="nav-link" href="../horario/horario.html">Horario</a></li>
+          <li class="nav-item"><a class="nav-link" href="../contenido/contenido.html">Contenido</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">Formularios</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item active" href="contacto.html">Contacto</a></li>
+              <li><a class="dropdown-item" href="buzon.html">Buzón</a></li>
+              <li><a class="dropdown-item" href="../buscar/buscar.html">Búsqueda</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Proyectos</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../proyectos/proyectos.html">Proyectos</a></li>
+              <li><a class="dropdown-item" href="../proyectos-futuros.html">Proyectos Futuros</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="../proyeccion.html">Proyección</a></li>
+          <li class="nav-item"><a class="nav-link" href="../login/login.html">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <main>
-        <h1>Formularios de Contacto</h1>
+  <!-- ============================================================ HERO -->
+  <div class="hero-banner">
+    <div class="container text-center text-white">
+      <h1 class="display-4 fw-bold mb-3">
+        <i class="fas fa-envelope me-2"></i>Contacto y Formularios
+      </h1>
+      <p class="lead">Completa el formulario que necesites</p>
+    </div>
+  </div>
 
-        <section>
-            <h2>1. Formulario de Contacto</h2>
-            <p style="color: #666; margin-bottom: 20px;"><em>Envíanos tu mensaje directo</em></p>
+  <!-- ============================================================ MAIN -->
+  <main class="container my-5">
+    <div class="row">
+      <div class="col-12">
+        <div class="card shadow-lg border-0">
+          <div class="card-body p-4">
 
-            <form action="#" method="GET">
-                <div class="form-group">
-                    <label for="contacto_nombre">Nombre Completo:</label>
-                    <input type="text" id="contacto_nombre" name="contacto_nombre" 
-                           placeholder="Ej: Juan García López" required>
-                </div>
+            <!-- Tabs -->
+            <ul class="nav nav-tabs mb-4 flex-wrap" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="tab-contacto" data-bs-toggle="tab" data-bs-target="#pane-contacto" type="button" role="tab">
+                  <i class="fas fa-envelope me-1"></i>Contacto
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tab-registro" data-bs-toggle="tab" data-bs-target="#pane-registro" type="button" role="tab">
+                  <i class="fas fa-user-plus me-1"></i>Registro
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tab-materias" data-bs-toggle="tab" data-bs-target="#pane-materias" type="button" role="tab">
+                  <i class="fas fa-book me-1"></i>Materias
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tab-plan" data-bs-toggle="tab" data-bs-target="#pane-plan" type="button" role="tab">
+                  <i class="fas fa-calendar-check me-1"></i>Planificación
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tab-pref" data-bs-toggle="tab" data-bs-target="#pane-pref" type="button" role="tab">
+                  <i class="fas fa-sliders-h me-1"></i>Preferencias
+                </button>
+              </li>
+            </ul>
 
-                <div class="form-group">
-                    <label for="contacto_email">Correo Electrónico:</label>
-                    <input type="email" id="contacto_email" name="contacto_email" 
-                           placeholder="Ej: correo@ejemplo.com" required>
-                </div>
+            <!-- Tab content -->
+            <div class="tab-content">
 
-                <div class="form-group">
-                    <label for="contacto_asunto">Asunto:</label>
-                    <input type="text" id="contacto_asunto" name="contacto_asunto" 
-                           placeholder="Asunto del mensaje" required>
-                </div>
+              <!-- ===== TAB 1: CONTACTO ===== -->
+              <div class="tab-pane fade show active" id="pane-contacto" role="tabpanel">
+                <h4 class="mb-4"><i class="fas fa-paper-plane me-2"></i>Formulario de Contacto</h4>
+                <p class="text-muted mb-4">Envíame un mensaje directo y te responderé a la brevedad.</p>
+                <form action="#" method="GET">
+                  <div class="row g-3">
+                    <div class="col-12">
+                      <label for="contacto_nombre" class="form-label">Nombre Completo *</label>
+                      <input type="text" class="form-control" id="contacto_nombre" name="contacto_nombre"
+                        placeholder="Ej: Juan García López" required>
+                    </div>
+                    <div class="col-12">
+                      <label for="contacto_email" class="form-label">Correo Electrónico *</label>
+                      <input type="email" class="form-control" id="contacto_email" name="contacto_email"
+                        placeholder="Ej: correo@ejemplo.com" required>
+                    </div>
+                    <div class="col-12">
+                      <label for="contacto_asunto" class="form-label">Asunto *</label>
+                      <input type="text" class="form-control" id="contacto_asunto" name="contacto_asunto"
+                        placeholder="Asunto del mensaje" required>
+                    </div>
+                    <div class="col-12">
+                      <label for="contacto_mensaje" class="form-label">Mensaje *</label>
+                      <textarea class="form-control" id="contacto_mensaje" name="contacto_mensaje"
+                        rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                    </div>
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane me-2"></i>Enviar Mensaje
+                      </button>
+                      <button type="reset" class="btn btn-outline-secondary ms-2">
+                        <i class="fas fa-eraser me-1"></i>Limpiar
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
 
-                <div class="form-group">
-                    <label for="contacto_mensaje">Mensaje:</label>
-                    <textarea id="contacto_mensaje" name="contacto_mensaje" 
-                              placeholder="Escribe tu mensaje aquí..." required></textarea>
-                </div>
+              <!-- ===== TAB 2: REGISTRO ===== -->
+              <div class="tab-pane fade" id="pane-registro" role="tabpanel">
+                <h4 class="mb-4"><i class="fas fa-id-card me-2"></i>Formulario de Registro</h4>
+                <p class="text-muted mb-4">Completa tus datos personales para registrarte.</p>
+                <form action="#" method="GET">
+                  <div class="row g-3">
+                    <div class="col-12 col-md-6">
+                      <label for="reg_nombres" class="form-label">Nombres *</label>
+                      <input type="text" class="form-control" id="reg_nombres" name="reg_nombres" required>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <label for="reg_apellidos" class="form-label">Apellidos *</label>
+                      <input type="text" class="form-control" id="reg_apellidos" name="reg_apellidos" required>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <label for="reg_cedula" class="form-label">Cédula de Identidad *</label>
+                      <input type="text" class="form-control" id="reg_cedula" name="reg_cedula"
+                        placeholder="Ej: 1234567890" pattern="\d{10}" title="Ingrese 10 dígitos" required>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <label for="reg_telefono" class="form-label">Teléfono *</label>
+                      <input type="tel" class="form-control" id="reg_telefono" name="reg_telefono"
+                        placeholder="+593 9 1234567" required>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <label for="reg_email" class="form-label">Correo Electrónico *</label>
+                      <input type="email" class="form-control" id="reg_email" name="reg_email" required>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <label for="reg_fecha" class="form-label">Fecha de Nacimiento *</label>
+                      <input type="date" class="form-control" id="reg_fecha" name="reg_fecha" required>
+                    </div>
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-user-plus me-2"></i>Registrarse
+                      </button>
+                      <button type="reset" class="btn btn-outline-secondary ms-2">
+                        <i class="fas fa-eraser me-1"></i>Limpiar
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
 
-                <button type="submit">Enviar Mensaje</button>
-            </form>
-        </section>
-
-        <section>
-            <h2>2. Formulario de Registro</h2>
-            <p style="color: #666; margin-bottom: 20px;"><em>Completa tus datos personales</em></p>
-
-            <form action="#" method="GET">
-                <div class="form-group">
-                    <label for="registro_nombre">Nombres:</label>
-                    <input type="text" id="registro_nombre" name="registro_nombre" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="registro_apellido">Apellidos:</label>
-                    <input type="text" id="registro_apellido" name="registro_apellido" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="registro_cedula">Cédula de Identidad:</label>
-                    <input type="text" id="registro_cedula" name="registro_cedula" 
-                           placeholder="Ej: 1234567890" pattern="\d{10}" required 
-                           title="Ingrese 10 dígitos válidos">
-                </div>
-
-                <div class="form-group">
-                    <label for="registro_telefono">Teléfono:</label>
-                    <input type="tel" id="registro_telefono" name="registro_telefono" 
-                           placeholder="+593 9 1234567" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="registro_email">Correo Electrónico:</label>
-                    <input type="email" id="registro_email" name="registro_email" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="registro_fecha">Fecha de Nacimiento:</label>
-                    <input type="date" id="registro_fecha" name="registro_fecha" required>
-                </div>
-
-                <button type="submit">Registrarse</button>
-            </form>
-        </section>
-
-        <section>
-            <h2>3. Formulario de Selección de Materias</h2>
-            <p style="color: #666; margin-bottom: 20px;"><em>Elige la materia sobre la que deseas hacer consultas</em></p>
-
-            <form action="#" method="GET">
-                <div class="form-group">
-                    <label for="materia_seleccion">Selecciona una Asignatura:</label>
-                    <select id="materia_seleccion" name="materia_seleccion" required>
+              <!-- ===== TAB 3: SELECCIÓN DE MATERIAS ===== -->
+              <div class="tab-pane fade" id="pane-materias" role="tabpanel">
+                <h4 class="mb-4"><i class="fas fa-book-reader me-2"></i>Selección de Materias</h4>
+                <p class="text-muted mb-4">Elige la materia sobre la que deseas realizar una consulta.</p>
+                <form action="#" method="GET">
+                  <div class="row g-3">
+                    <div class="col-12">
+                      <label for="mat_seleccion" class="form-label">Selecciona una Asignatura *</label>
+                      <select class="form-select" id="mat_seleccion" name="mat_seleccion" required>
                         <option value="">-- Selecciona una materia --</option>
-                        <option value="Sistemas de Base de Datos">Sistemas de Base de Datos</option>
-                        <option value="Interfaces y Multimedia">Interfaces y Multimedia</option>
-                        <option value="Fundamentos de Sistemas Web">Fundamentos de Sistemas Web</option>
-                        <option value="Métodos Numéricos">Métodos Numéricos</option>
-                        <option value="Redes de Comunicación">Redes de Comunicación</option>
-                        <option value="English">English</option>
-                    </select>
-                </div>
+                        <option value="sbd">Sistemas de Base de Datos</option>
+                        <option value="im">Interfaces y Multimedia</option>
+                        <option value="fsw">Fundamentos de Sistemas Web</option>
+                        <option value="mn">Métodos Numéricos</option>
+                        <option value="rc">Redes de Comunicación</option>
+                        <option value="en">English</option>
+                      </select>
+                    </div>
+                    <div class="col-12">
+                      <label for="mat_consulta" class="form-label">Tu Consulta *</label>
+                      <textarea class="form-control" id="mat_consulta" name="mat_consulta"
+                        rows="5" placeholder="Describe tu consulta sobre la materia seleccionada..." required></textarea>
+                    </div>
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-check me-2"></i>Enviar Consulta
+                      </button>
+                      <button type="reset" class="btn btn-outline-secondary ms-2">
+                        <i class="fas fa-eraser me-1"></i>Limpiar
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
 
-                <div class="form-group">
-                    <label for="materia_consulta">Tu Consulta:</label>
-                    <textarea id="materia_consulta" name="materia_consulta" 
-                              placeholder="Describe tu consulta sobre la materia seleccionada..." required></textarea>
-                </div>
+              <!-- ===== TAB 4: PLANIFICACIÓN DE ESTUDIO ===== -->
+              <div class="tab-pane fade" id="pane-plan" role="tabpanel">
+                <h4 class="mb-4"><i class="fas fa-calendar-alt me-2"></i>Planificación de Estudio</h4>
+                <p class="text-muted mb-4">Registra tu horario y fecha de sesión de estudio.</p>
+                <form action="#" method="GET">
+                  <div class="row g-3">
+                    <div class="col-12">
+                      <label for="plan_fecha" class="form-label">Fecha de Estudio *</label>
+                      <input type="date" class="form-control" id="plan_fecha" name="plan_fecha" required>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <label for="plan_inicio" class="form-label">Hora de Inicio *</label>
+                      <input type="time" class="form-control" id="plan_inicio" name="plan_inicio"
+                        min="08:00" max="22:00" required>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <label for="plan_fin" class="form-label">Hora de Término *</label>
+                      <input type="time" class="form-control" id="plan_fin" name="plan_fin"
+                        min="08:00" max="22:00" required>
+                    </div>
+                    <div class="col-12">
+                      <label for="plan_tema" class="form-label">Tema a Estudiar *</label>
+                      <input type="text" class="form-control" id="plan_tema" name="plan_tema"
+                        placeholder="Ej: Bases de Datos SQL" required>
+                    </div>
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-calendar-check me-2"></i>Guardar Planificación
+                      </button>
+                      <button type="reset" class="btn btn-outline-secondary ms-2">
+                        <i class="fas fa-eraser me-1"></i>Limpiar
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
 
-                <button type="submit">Enviar Consulta</button>
-            </form>
-        </section>
+              <!-- ===== TAB 5: PREFERENCIAS ===== -->
+              <div class="tab-pane fade" id="pane-pref" role="tabpanel">
+                <h4 class="mb-4"><i class="fas fa-sliders-h me-2"></i>Preferencias e Intereses</h4>
+                <p class="text-muted mb-4">Selecciona tus intereses académicos, personales y musicales.</p>
+                <form action="#" method="GET">
+                  <div class="row g-4">
 
-        <section>
-            <h2>4. Formulario de Planificación de Estudio</h2>
-            <p style="color: #666; margin-bottom: 20px;"><em>Registra tu horario y fecha de estudio</em></p>
+                    <!-- Intereses académicos -->
+                    <div class="col-12 col-md-4">
+                      <fieldset class="border border-primary rounded p-3">
+                        <legend class="float-none w-auto px-2 fs-6 fw-bold text-primary">
+                          <i class="fas fa-laptop-code me-1"></i>Intereses Académicos
+                        </legend>
+                        <div class="form-check mb-2">
+                          <input class="form-check-input" type="checkbox" id="int_bd" name="acad" value="base-datos">
+                          <label class="form-check-label" for="int_bd">Base de Datos</label>
+                        </div>
+                        <div class="form-check mb-2">
+                          <input class="form-check-input" type="checkbox" id="int_web" name="acad" value="web">
+                          <label class="form-check-label" for="int_web">Desarrollo Web</label>
+                        </div>
+                        <div class="form-check mb-2">
+                          <input class="form-check-input" type="checkbox" id="int_seg" name="acad" value="seguridad">
+                          <label class="form-check-label" for="int_seg">Seguridad Informática</label>
+                        </div>
+                        <div class="form-check mb-2">
+                          <input class="form-check-input" type="checkbox" id="int_redes" name="acad" value="redes">
+                          <label class="form-check-label" for="int_redes">Redes de Computadoras</label>
+                        </div>
+                        <div class="form-check mb-2">
+                          <input class="form-check-input" type="checkbox" id="int_ia" name="acad" value="ia">
+                          <label class="form-check-label" for="int_ia">Inteligencia Artificial</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="int_movil" name="acad" value="movil">
+                          <label class="form-check-label" for="int_movil">Desarrollo Móvil</label>
+                        </div>
+                      </fieldset>
+                    </div>
 
-            <form action="#" method="GET">
-                <div class="form-group">
-                    <label for="estudio_fecha">Fecha de Estudio:</label>
-                    <input type="date" id="estudio_fecha" name="estudio_fecha" required>
-                </div>
+                    <!-- Intereses personales -->
+                    <div class="col-12 col-md-4">
+                      <fieldset class="border border-primary rounded p-3">
+                        <legend class="float-none w-auto px-2 fs-6 fw-bold text-primary">
+                          <i class="fas fa-heart me-1"></i>Intereses Personales
+                        </legend>
+                        <div class="form-check mb-2">
+                          <input class="form-check-input" type="checkbox" id="per_dep" name="personal" value="deportes">
+                          <label class="form-check-label" for="per_dep">Deportes</label>
+                        </div>
+                        <div class="form-check mb-2">
+                          <input class="form-check-input" type="checkbox" id="per_mus" name="personal" value="musica">
+                          <label class="form-check-label" for="per_mus">Música</label>
+                        </div>
+                        <div class="form-check mb-2">
+                          <input class="form-check-input" type="checkbox" id="per_arte" name="personal" value="arte">
+                          <label class="form-check-label" for="per_arte">Arte</label>
+                        </div>
+                        <div class="form-check mb-2">
+                          <input class="form-check-input" type="checkbox" id="per_cine" name="personal" value="cine">
+                          <label class="form-check-label" for="per_cine">Cine</label>
+                        </div>
+                        <div class="form-check mb-2">
+                          <input class="form-check-input" type="checkbox" id="per_lec" name="personal" value="lectura">
+                          <label class="form-check-label" for="per_lec">Lectura</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="per_viaje" name="personal" value="viajar">
+                          <label class="form-check-label" for="per_viaje">Viajar</label>
+                        </div>
+                      </fieldset>
+                    </div>
 
-                <div class="form-group">
-                    <label for="estudio_hora_inicio">Hora de Inicio:</label>
-                    <input type="time" id="estudio_hora_inicio" name="estudio_hora_inicio" 
-                           min="08:00" max="22:00" required>
-                </div>
+                    <!-- Intereses musicales -->
+                    <div class="col-12 col-md-4">
+                      <fieldset class="border border-primary rounded p-3">
+                        <legend class="float-none w-auto px-2 fs-6 fw-bold text-primary">
+                          <i class="fas fa-music me-1"></i>Preferencias Musicales
+                        </legend>
+                        <div class="form-check mb-2">
+                          <input class="form-check-input" type="checkbox" id="mus_salsa" name="musica" value="salsa">
+                          <label class="form-check-label" for="mus_salsa">Salsa</label>
+                        </div>
+                        <div class="form-check mb-2">
+                          <input class="form-check-input" type="checkbox" id="mus_cum" name="musica" value="cumbia">
+                          <label class="form-check-label" for="mus_cum">Cumbia</label>
+                        </div>
+                        <div class="form-check mb-2">
+                          <input class="form-check-input" type="checkbox" id="mus_elec" name="musica" value="electronica">
+                          <label class="form-check-label" for="mus_elec">Electrónica</label>
+                        </div>
+                        <div class="form-check mb-2">
+                          <input class="form-check-input" type="checkbox" id="mus_bach" name="musica" value="bachata">
+                          <label class="form-check-label" for="mus_bach">Bachata</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="mus_rock" name="musica" value="rock">
+                          <label class="form-check-label" for="mus_rock">Rock</label>
+                        </div>
+                      </fieldset>
+                    </div>
 
-                <div class="form-group">
-                    <label for="estudio_hora_fin">Hora de Fin:</label>
-                    <input type="time" id="estudio_hora_fin" name="estudio_hora_fin" 
-                           min="08:00" max="22:00" required>
-                </div>
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-save me-2"></i>Guardar Preferencias
+                      </button>
+                      <button type="reset" class="btn btn-outline-secondary ms-2">
+                        <i class="fas fa-eraser me-1"></i>Limpiar
+                      </button>
+                    </div>
 
-                <div class="form-group">
-                    <label for="estudio_tema">Tema a Estudiar:</label>
-                    <input type="text" id="estudio_tema" name="estudio_tema" 
-                           placeholder="Ej: Arrays en Python" required>
-                </div>
+                  </div>
+                </form>
+              </div>
 
-                <button type="submit">Guardar Planificación</button>
-            </form>
-        </section>
+            </div><!-- /tab-content -->
+          </div><!-- /card-body -->
+        </div><!-- /card -->
+      </div>
+    </div>
+  </main>
 
-        <section>
-            <h2>5. Formulario de Preferencias e Intereses</h2>
-            <p style="color: #666; margin-bottom: 20px;"><em>Selecciona tus intereses académicos</em></p>
+  <!-- ============================================================ FOOTER -->
+  <footer class="footer mt-5">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-12 col-md-6 mb-3 mb-md-0">
+          <h5><i class="fas fa-graduation-cap me-2"></i>Educación</h5>
+          <p>Universidad de las Fuerzas Armadas ESPE<br>Ingeniería en Tecnologías de la Información<br>Ecuador 🇪🇨</p>
+        </div>
+        <div class="col-12 col-md-6">
+          <h5><i class="fas fa-share-alt me-2"></i>Redes Sociales</h5>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/corina-alejandra-acosta-oliva-1555ba28a" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://github.com/Corina-ac" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <p class="text-center mb-0">&copy; 2026 Corina Alejandra Acosta Oliva &mdash; Fundamentos Web ESPE</p>
+    </div>
+  </footer>
 
-            <form action="#" method="GET">
-                <fieldset>
-                    <legend>Intereses Académicos</legend>
-                    <label><input type="checkbox" name="intereses" value="base-datos"> Base de Datos</label>
-                    <label><input type="checkbox" name="intereses" value="web"> Desarrollo Web</label>
-                    <label><input type="checkbox" name="intereses" value="seguridad"> Seguridad Informática</label>
-                    <label><input type="checkbox" name="intereses" value="redes"> Redes de Computadoras</label>
-                    <label><input type="checkbox" name="intereses" value="inteligencia"> Inteligencia Artificial</label>
-                    <label><input type="checkbox" name="intereses" value="movil"> Desarrollo Móvil</label>
-                </fieldset>
-
-                <fieldset>
-                    <legend>Intereses Personales</legend>
-                    <label><input type="checkbox" name="hobbies" value="deportes"> Deportes</label>
-                    <label><input type="checkbox" name="hobbies" value="musica"> Música</label>
-                    <label><input type="checkbox" name="hobbies" value="arte"> Arte</label>
-                    <label><input type="checkbox" name="hobbies" value="cine"> Cine</label>
-                    <label><input type="checkbox" name="hobbies" value="lectura"> Lectura</label>
-                    <label><input type="checkbox" name="hobbies" value="tecnologia"> Tecnología</label>
-                    <label><input type="checkbox" name="hobbies" value="viajar"> Viajar</label>
-                    <label><input type="checkbox" name="hobbies" value="cocina"> Cocina</label>
-                </fieldset>
-                
-                <fieldset>
-                    <legend>Intereses musicales</legend>
-                    <label><input type="checkbox" name="music" value="salsa"> Salsa</label>
-                    <label><input type="checkbox" name="music" value="Cumbia"> Cumbia </label>
-                    <label><input type="checkbox" name="music" value="electronica"> electronica </label>
-                    <label><input type="checkbox" name="music" value="bachata"> bachata</label>
-                    <label><input type="checkbox" name="music" value="rock"> rock</label>
-
-                </fieldset>
-                
-
-                <button type="submit">Guardar Preferencias</button>
-            </form>
-        </section>
-
-    </main>
-
-    <footer>
-        <h3>Encuéntrame en:</h3>
-
-        <img src="../../multimedia/img/linkedin.ico" width="20">
-        <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
-
-        <img src="../../multimedia/img/facebook.ico" width="20">
-        <a href="https://www.facebook.com/" target="_blank">Facebook</a>
-
-        <img src="../../multimedia/img/instagram.ico" width="20">
-        <a href="https://www.instagram.com/" target="_blank">Instagram</a>
-
-        <img src="../../multimedia/img/tiktok.ico" width="20">
-        <a href="https://www.tiktok.com/" target="_blank">TikTok</a>
-
-        <p>Corina Acosta | ESPE</p>
-    </footer>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>

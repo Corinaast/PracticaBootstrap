@@ -1,0 +1,17 @@
+/* ================================================
+   CONTACTO CSS
+   Estilos específicos de Contacto y Buzón de Sugerencias
+   ================================================ */
+
+/* Formulario de contacto centrado */
+.contact-form-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Icono decorativo del encabezado del formulario */
+.contact-icon {
+  font-size: 3rem;
+  color: #008B8B;
+  margin-bottom: 1rem;
+}

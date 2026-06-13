@@ -2,256 +2,207 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Mi Perfil Profesional - ESPE</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #333;
-            background: linear-gradient(135deg, #f0f8ff 0%, #e0ffff 100%);
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-
-        header {
-            text-align: center;
-            padding: 30px 10px;
-            background-color: #ffffff;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        header img {
-            max-width: 280px;
-            height: auto;
-        }
-
-        header figcaption {
-            font-size: 1.3em;
-            color: #008B8B;
-            margin-top: 15px;
-            font-weight: 600;
-        }
-
-        nav {
-            background-color: #008B8B;
-            padding: 15px;
-            text-align: center;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: white;
-            font-weight: 500;
-            transition: all 0.3s;
-            padding: 8px 12px;
-            border-radius: 4px;
-        }
-
-        nav a:hover {
-            background-color: rgba(255, 255, 255, 0.2);
-            color: #e0ffff;
-        }
-
-        h1 {
-            font-size: 2.5em;
-            color: #008B8B;
-            text-align: center;
-            margin: 30px 0 20px;
-            font-weight: 700;
-        }
-
-        h2 {
-            font-size: 2em;
-            color: #008B8B;
-            text-align: center;
-            margin: 25px 0 15px;
-            font-weight: 600;
-        }
-
-        h3 {
-            font-size: 1.3em;
-            color: #006f6f;
-            margin: 15px 0 10px;
-        }
-
-        main {
-            flex: 1;
-            padding: 30px 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-            width: 100%;
-        }
-
-        .welcome-section {
-            background-color: white;
-            border-radius: 12px;
-            padding: 30px;
-            margin-bottom: 30px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-
-        .welcome-section p {
-            font-size: 1.1em;
-            color: #666;
-            line-height: 1.6;
-            margin: 15px 0;
-        }
-
-        .banner {
-            width: 100%;
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            margin: 20px 0;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .cta-button {
-            display: inline-block;
-            margin: 15px 10px;
-            padding: 12px 30px;
-            background-color: #008B8B;
-            color: white;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: 600;
-            transition: background-color 0.3s, transform 0.2s;
-        }
-
-        .cta-button:hover {
-            background-color: #006f6f;
-            transform: translateY(-2px);
-        }
-
-        footer {
-            background-color: #008B8B;
-            color: white;
-            text-align: center;
-            padding: 30px 20px;
-            margin-top: 40px;
-        }
-
-        footer h3 {
-            color: #e0ffff;
-            margin-bottom: 20px;
-        }
-
-        footer a {
-            color: #e0ffff;
-            text-decoration: none;
-            margin: 0 15px;
-            transition: color 0.3s;
-        }
-
-        footer a:hover {
-            color: white;
-        }
-
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin: 15px 0;
-            flex-wrap: wrap;
-        }
-
-        .social-icons img {
-            width: 28px;
-            height: 28px;
-            transition: transform 0.3s;
-        }
-
-        .social-icons a {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            margin: 0;
-        }
-
-        .social-icons a:hover img {
-            transform: scale(1.2);
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Perfil Académico - Corina Acosta | ESPE</title>
+  
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <link rel="stylesheet" href="css/general.css">
+  <link rel="stylesheet" href="css/index.css">
+  
+  <link rel="icon" type="image/x-icon" href="multimedia/img/mundito.ico">
 </head>
 
 <body>
-    <header>
-        <figure>
-            <img src="multimedia/img/imagenejemploespe.png" alt="ESPE" width="300">
-            <figcaption><strong>Universidad de las Fuerzas Armadas ESPE</strong></figcaption>
-        </figure>
-    </header>
+  <!-- ============================================
+       NAVBAR
+       ============================================ -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <i class="fas fa-user-graduate"></i> Corina Acosta
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Sobre mí
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="pages/sobremi/sobremi.html">Sobre mí</a></li>
+              <li><a class="dropdown-item" href="pages/habilidades.html">Habilidades</a></li>
+              <li><a class="dropdown-item" href="pages/metas.html">Metas</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/multimedia/multimedia.html">Presentación</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/horario/horario.html">Horario</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/contenido/contenido.html">Contenido</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Formularios
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="pages/cto/contacto.html">Contacto</a></li>
+              <li><a class="dropdown-item" href="pages/cto/buzon.html">Buzón de Sugerencias</a></li>
+              <li><a class="dropdown-item" href="pages/buscar/buscar.html">Búsqueda</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Proyectos
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="pages/proyectos/proyectos.html">Proyectos</a></li>
+              <li><a class="dropdown-item" href="pages/proyectos-futuros.html">Proyectos Futuros</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/proyeccion.html">Proyección</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/login/login.html">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <nav>
-        <a href="#">Home</a>
-        <a href="pages/sobremi/sobremi.html">Sobre mí</a>
-        <a href="pages/multimedia/multimedia.html">Presentación</a>
-        <a href="pages/horario/horario.html">Horario</a>
-        <a href="pages/contenido/contenido.html">Contenido</a>
-        <a href="pages/cto/contacto.html">Contacto</a>
-        <a href="pages/cto/buzon.html">Buzón</a>
-        <a href="pages/proyectos/proyectos.html">Proyectos</a>
-        <a href="pages/buscar/buscar.html">Buscar</a>
-        <a href="pages/login/login.html" style="background-color: #fff; color: #008B8B; font-weight: 700;">Login</a>
-    </nav>
+  <!-- ============================================
+       HERO SECTION
+       ============================================ -->
+  <div class="hero-banner">
+    <div class="container text-center text-white">
+      <h1 class="display-4 fw-bold mb-3">¡Bienvenido/a!</h1>
+      <p class="lead mb-4">Mi Perfil Académico y Profesional</p>
+    </div>
+  </div>
 
-    <main>
-        <div class="welcome-section">
-            <h2>¡Bienvenido/a!</h2>
-            <p>
-                Soy <strong>Corina Acosta</strong>, estudiante de <strong>Ingeniería en Tecnologías de la Información</strong>
-                en la Universidad de las Fuerzas Armadas ESPE.
+  <!-- ============================================
+       MAIN CONTENT
+       ============================================ -->
+  <main class="container my-5">
+    <div class="row align-items-center">
+      <!-- Columna Izquierda: Imagen -->
+      <div class="col-12 col-md-4 text-center mb-4 mb-md-0">
+        <img src="multimedia/img/banner-espe.png" alt="Corina Acosta" class="img-fluid rounded-circle shadow" style="max-width: 250px;">
+      </div>
+      
+      <!-- Columna Derecha: Contenido -->
+      <div class="col-12 col-md-8">
+        <div class="card shadow-lg border-0">
+          <div class="card-body p-4">
+            <h2 class="card-title text-primary mb-3">
+              <i class="fas fa-user-circle"></i> Sobre Mí
+            </h2>
+            <p class="lead mb-3">
+              Soy <strong>Corina Alejandra Acosta Oliva</strong>, estudiante de <strong>Ingeniería en Tecnologías de la Información</strong>
+              en la Universidad de las Fuerzas Armadas ESPE.
             </p>
-            <p>
-                Este sitio muestra mi perfil académico, mis intereses profesionales en tecnología y ciberseguridad,
-                así como mis proyectos y actividades universitarias.
+            <p class="mb-3">
+              Este sitio web representa mi perfil académico, donde encontrarás información sobre mis intereses profesionales,
+              mis proyectos, mi horario de clases y diversas formas de contactarme.
             </p>
-            <p>
-                <a href="pages/cto/contacto.html" class="cta-button">Contáctame</a>
-                <a href="pages/login/login.html" class="cta-button">Iniciar Sesión</a>
-            </p>
+            <div class="d-flex gap-2 flex-wrap">
+              <a href="pages/cto/contacto.html" class="btn btn-primary">
+                <i class="fas fa-envelope"></i> Contáctame
+              </a>
+              <a href="pages/login/login.html" class="btn btn-outline-primary">
+                <i class="fas fa-sign-in-alt"></i> Iniciar Sesión
+              </a>
+            </div>
+          </div>
         </div>
+      </div>
+    </div>
 
-        <img src="multimedia/img/banner-espe.png" alt="ESPE Banner" class="banner">
-    </main>
+    <!-- Sección de Características -->
+    <div class="row mt-5 g-4">
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card text-center border-0 shadow-sm">
+          <div class="card-body">
+            <i class="fas fa-book fa-3x text-primary mb-3"></i>
+            <h5 class="card-title">Académico</h5>
+            <p class="card-text text-muted">Explora mi contenido y plan de aprendizaje</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card text-center border-0 shadow-sm">
+          <div class="card-body">
+            <i class="fas fa-laptop-code fa-3x text-primary mb-3"></i>
+            <h5 class="card-title">Proyectos</h5>
+            <p class="card-text text-muted">Descubre mis trabajos realizados</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card text-center border-0 shadow-sm">
+          <div class="card-body">
+            <i class="fas fa-calendar fa-3x text-primary mb-3"></i>
+            <h5 class="card-title">Mi Horario</h5>
+            <p class="card-text text-muted">Ver mis clases y disponibilidad</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card text-center border-0 shadow-sm">
+          <div class="card-body">
+            <i class="fas fa-comments fa-3x text-primary mb-3"></i>
+            <h5 class="card-title">Contacto</h5>
+            <p class="card-text text-muted">Ponte en contacto conmigo</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 
-    <footer>
-        <h3>Encuéntrame en mis redes sociales</h3>
-        <div class="social-icons">
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer mt-5">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-12 col-md-6 mb-3 mb-md-0">
+          <h5><i class="fas fa-graduation-cap"></i> Educación</h5>
+          <p>Universidad de las Fuerzas Armadas ESPE<br>Ingeniería en Tecnologías de la Información<br>Ecuador 🇪🇨</p>
+        </div>
+        <div class="col-12 col-md-6">
+          <h5><i class="fas fa-link"></i> Redes Sociales</h5>
+          <div class="social-links">
             <a href="https://www.linkedin.com/in/corina-alejandra-acosta-oliva-1555ba28a" target="_blank">
-                <img src="multimedia/img/linkedin.ico" alt="LinkedIn">
-                <span>LinkedIn</span>
+              <i class="fab fa-linkedin"></i> LinkedIn
             </a>
-            <a href="https://www.facebook.com/" target="_blank">
-                <img src="multimedia/img/facebook.ico" alt="Facebook">
-                <span>Facebook</span>
+            <a href="https://github.com" target="_blank">
+              <i class="fab fa-github"></i> GitHub
             </a>
-            <a href="https://www.instagram.com/" target="_blank">
-                <img src="multimedia/img/instagram.ico" alt="Instagram">
-                <span>Instagram</span>
-            </a>
-            <a href="https://www.tiktok.com/" target="_blank">
-                <img src="multimedia/img/tiktok.ico" alt="TikTok">
-                <span>TikTok</span>
-            </a>
+          </div>
         </div>
-        <p style="margin-top: 20px; border-top: 1px solid #e0ffff; padding-top: 15px;">
-            &copy; 2025 - Universidad de las Fuerzas Armadas ESPE | Laboratorio HTML5 y Formularios
-        </p>
-    </footer>
+      </div>
+      <hr>
+      <p class="text-center mb-0">&copy; 2026 Corina Alejandra Acosta Oliva - Fundamentos Web ESPE</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5.3 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

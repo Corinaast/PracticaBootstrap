@@ -1,0 +1,126 @@
+/* ================================================
+   PORTAFOLIO CSS
+   Estilos específicos para Proyectos y Proyección
+   ================================================ */
+
+/* ======================================================
+   CAROUSEL — variantes de fondo para acordeón
+   ====================================================== */
+.carousel-slide-bg-1 { background: linear-gradient(135deg, #e0ffff 0%, #b2f0f0 100%); }
+.carousel-slide-bg-2 { background: linear-gradient(135deg, #f0f8ff 0%, #cce8ff 100%); }
+.carousel-slide-bg-3 { background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%); }
+
+.carousel-inner-accordion {
+  border-radius: 0 0 8px 8px;
+  overflow: hidden;
+}
+
+.carousel-inner-accordion .carousel-slide-content {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Botones de carrusel oscuros para fondos claros */
+.carousel-btn-dark {
+  background-color: rgba(0, 0, 0, 0.25) !important;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 1;
+}
+
+.carousel-btn-dark:hover {
+  background-color: rgba(0, 0, 0, 0.45) !important;
+}
+
+/* Indicadores oscuros para carruseles en fondo claro */
+.carousel-indicators-dark [data-bs-target] {
+  background-color: rgba(0, 0, 0, 0.35);
+  width: 10px;
+  height: 10px;
+  min-width: 10px;
+  min-height: 10px;
+  border-radius: 50%;
+  border: none;
+  border-top: 0;
+  border-bottom: 0;
+  padding: 0;
+  opacity: 1;
+  margin: 0 4px;
+}
+
+.carousel-indicators-dark .active {
+  background-color: #008B8B;
+  opacity: 1;
+}
+
+/* ======================================================
+   SKILL LABEL (barras de progreso)
+   ====================================================== */
+.skill-label {
+  font-weight: 600;
+  color: #008B8B;
+  margin-bottom: 0.3rem;
+  font-size: 0.92rem;
+}
+
+/* ======================================================
+   TIMELINE DOT
+   ====================================================== */
+.timeline-dot {
+  width: 14px;
+  height: 14px;
+  min-width: 14px;
+  min-height: 14px;
+  border-radius: 50%;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+/* ======================================================
+   ASIDE / SCROLLSPY
+   ====================================================== */
+#aside-nav .list-group-item {
+  font-size: 0.9rem;
+  border-left: 3px solid transparent;
+  transition: all 0.2s ease;
+}
+
+#aside-nav .list-group-item.active,
+#aside-nav .list-group-item:hover {
+  background-color: #e0ffff;
+  border-left-color: #008B8B;
+  color: #008B8B;
+  font-weight: 600;
+}
+
+/* ======================================================
+   PROYECCION — Sección áreas de interés (tabs)
+   ====================================================== */
+#interest-list-tab .list-group-item.active {
+  background-color: #008B8B;
+  border-color: #008B8B;
+  color: white;
+}
+
+#interest-list-tab .list-group-item.active i,
+#interest-list-tab .list-group-item.active .badge {
+  color: white !important;
+}
+
+.tab-pane .card {
+  min-height: 220px;
+}
+
+/* ======================================================
+   FIGURE / figcaption
+   ====================================================== */
+figcaption {
+  font-size: 0.82rem;
+  color: #6c757d;
+}

@@ -1,0 +1,529 @@
+/* ================================================
+   GENERAL CSS - PracticaBootstrap
+   Estilos compartidos por todas las páginas
+   Paleta institucional ESPE
+   Turquesa: #008B8B | Oscuro: #006f6f | Fondo: #f0f8ff
+   ================================================ */
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --color-turquesa: #008B8B;
+  --color-oscuro:   #006f6f;
+  --color-fondo:    #f0f8ff;
+  --color-fondo-alt:#e0ffff;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f0f8ff 0%, #e0ffff 100%);
+  color: #333;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #008B8B;
+  font-weight: 600;
+}
+
+/* ======================================================
+   NAVBAR
+   ====================================================== */
+.navbar {
+  background-color: #008B8B !important;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: white !important;
+}
+
+.navbar-nav .nav-link {
+  color: rgba(255,255,255,0.92) !important;
+  font-weight: 500;
+  margin: 0 4px;
+  transition: all 0.3s ease;
+  border-radius: 6px;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: rgba(255,255,255,0.2);
+  color: #e0ffff !important;
+}
+
+.navbar-nav .nav-link.active {
+  color: #e0ffff !important;
+  font-weight: 700;
+  background-color: rgba(255,255,255,0.15);
+}
+
+.dropdown-menu {
+  background-color: #006f6f !important;
+  border: none;
+}
+
+.dropdown-item {
+  color: rgba(255,255,255,0.9) !important;
+  transition: all 0.2s;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: #008B8B !important;
+  color: #e0ffff !important;
+}
+
+.dropdown-item.active {
+  background-color: #008B8B !important;
+}
+
+/* ======================================================
+   HERO BANNER
+   ====================================================== */
+.hero-banner {
+  background: linear-gradient(135deg, #008B8B 0%, #006f6f 100%);
+  color: white;
+  padding: 4rem 0;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.hero-banner h1 {
+  color: white;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.25);
+}
+
+.hero-banner p {
+  color: rgba(255,255,255,0.95);
+}
+
+/* ======================================================
+   BUTTONS
+   ====================================================== */
+.btn-primary {
+  background-color: #008B8B !important;
+  border-color: #008B8B !important;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #006f6f !important;
+  border-color: #006f6f !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,139,139,0.35);
+}
+
+.btn-outline-primary {
+  color: #008B8B !important;
+  border-color: #008B8B !important;
+  font-weight: 600;
+}
+
+.btn-outline-primary:hover {
+  background-color: #008B8B !important;
+  border-color: #008B8B !important;
+  color: white !important;
+}
+
+.btn-outline-secondary:hover {
+  transform: translateY(-1px);
+}
+
+/* ======================================================
+   CARDS
+   ====================================================== */
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,139,139,0.18);
+}
+
+.card-header {
+  background-color: #008B8B !important;
+  color: white;
+  border: none;
+  border-radius: 12px 12px 0 0 !important;
+  font-weight: 600;
+}
+
+.card-header h3,
+.card-header h5,
+.card-header .mb-0 {
+  color: white !important;
+}
+
+.card-title {
+  color: #008B8B;
+  font-weight: 700;
+}
+
+/* ======================================================
+   TABLES
+   ====================================================== */
+.table {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table thead th {
+  background-color: #008B8B;
+  color: white;
+  font-weight: 600;
+  border: none;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.table tbody tr {
+  transition: background-color 0.2s;
+}
+
+.table tbody tr:hover {
+  background-color: #e0ffff;
+}
+
+.table td {
+  vertical-align: middle;
+  text-align: center;
+  border-color: #dee2e6;
+}
+
+.table td:first-child {
+  text-align: left;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+  background-color: rgba(0,139,139,0.04);
+}
+
+.table-responsive {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* ======================================================
+   FORMS
+   ====================================================== */
+.form-control,
+.form-select {
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  padding: 0.6rem 1rem;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #008B8B;
+  box-shadow: 0 0 0 0.2rem rgba(0,139,139,0.2);
+}
+
+.form-label {
+  font-weight: 600;
+  color: #008B8B;
+  margin-bottom: 0.4rem;
+}
+
+.form-check-input:checked {
+  background-color: #008B8B;
+  border-color: #008B8B;
+}
+
+.form-check-label {
+  font-weight: 500;
+}
+
+.input-group .btn {
+  border-radius: 0 8px 8px 0;
+}
+
+/* ======================================================
+   ACCORDION
+   ====================================================== */
+.accordion-button {
+  color: #333;
+  font-weight: 600;
+  background-color: #ffffff;
+}
+
+.accordion-button:hover {
+  background-color: #f0f8ff;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #008B8B;
+  color: white;
+  box-shadow: inset 0 -1px 0 rgba(0,0,0,0.1);
+}
+
+.accordion-button:not(.collapsed) i {
+  color: white;
+}
+
+.accordion-button::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23008B8B'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-body {
+  padding: 1.5rem;
+  background-color: #fafeff;
+}
+
+/* ======================================================
+   ALERTS
+   ====================================================== */
+.alert {
+  border: none;
+  border-radius: 8px;
+  border-left: 4px solid #008B8B;
+}
+
+.alert-info    { background-color: #d1ecf1; border-left-color: #008B8B; color: #0c5460; }
+.alert-success { background-color: #d4edda; border-left-color: #28a745; color: #155724; }
+.alert-warning { background-color: #fff3cd; border-left-color: #ffc107; color: #856404; }
+.alert-danger  { background-color: #f8d7da; border-left-color: #dc3545; color: #721c24; }
+
+/* ======================================================
+   BADGES
+   ====================================================== */
+.badge {
+  font-size: 0.82rem;
+  padding: 0.45rem 0.75rem;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+/* ======================================================
+   PROGRESS BARS
+   ====================================================== */
+.progress {
+  background-color: #e0efef;
+  border-radius: 10px;
+  height: 1rem;
+}
+
+.progress-bar {
+  background-color: #008B8B;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 0.78rem;
+}
+
+/* ======================================================
+   CAROUSEL
+   ====================================================== */
+.carousel {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0,139,139,0.15);
+}
+
+.carousel-item {
+  min-height: 380px;
+  display: flex;
+  align-items: center;
+}
+
+.carousel-caption {
+  position: static;
+  padding: 2.5rem;
+  color: #333;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: rgba(0,139,139,0.55);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.3s;
+  opacity: 1;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: #008B8B;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: rgba(255,255,255,0.6);
+  width: 10px;
+  height: 10px;
+  min-width: 10px;
+  min-height: 10px;
+  border-radius: 50%;
+  border-top: 0;
+  border-bottom: 0;
+  padding: 0;
+  margin: 0 4px;
+  opacity: 1;
+}
+
+.carousel-indicators .active {
+  background-color: #fff;
+  opacity: 1;
+}
+
+/* ======================================================
+   MODAL
+   ====================================================== */
+.modal-header {
+  background-color: #008B8B;
+  color: white;
+  border: none;
+  border-radius: 8px 8px 0 0;
+}
+
+.modal-title {
+  color: white;
+  font-weight: 700;
+}
+
+.btn-close {
+  filter: brightness(0) invert(1);
+}
+
+/* ======================================================
+   LIST GROUP
+   ====================================================== */
+.list-group-item {
+  border: 1px solid #e9ecef;
+  padding: 0.9rem 1.2rem;
+  transition: all 0.25s ease;
+}
+
+.list-group-item:hover {
+  background-color: #f0f8ff;
+  border-left: 4px solid #008B8B;
+  padding-left: calc(1.2rem - 3px);
+}
+
+.list-group-item.active {
+  background-color: #008B8B;
+  border-color: #008B8B;
+}
+
+/* ======================================================
+   FOOTER
+   ====================================================== */
+.footer {
+  background-color: #008B8B;
+  color: white;
+  padding: 3rem 0 2rem;
+  margin-top: 4rem;
+}
+
+.footer h5 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.footer p {
+  color: rgba(255,255,255,0.88);
+  margin-bottom: 0.4rem;
+}
+
+.footer a {
+  color: #e0ffff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin-right: 0.8rem;
+  display: inline-block;
+}
+
+.footer a:hover {
+  color: white;
+  transform: translateY(-2px);
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.footer hr {
+  border-color: rgba(255,255,255,0.25);
+  margin: 1.5rem 0 1rem;
+}
+
+/* ======================================================
+   IMAGES
+   ====================================================== */
+.img-fluid {
+  border-radius: 8px;
+}
+
+img.rounded-circle {
+  border: 4px solid #008B8B;
+}
+
+/* ======================================================
+   UTILITIES
+   ====================================================== */
+.text-primary   { color: #008B8B !important; }
+.bg-primary     { background-color: #008B8B !important; }
+.border-primary { border-color: #008B8B !important; }
+
+.shadow-lg {
+  box-shadow: 0 1rem 3rem rgba(0,139,139,0.15) !important;
+}
+
+/* Nav tabs personalizados */
+.nav-tabs .nav-link {
+  color: #008B8B;
+  font-weight: 500;
+}
+
+.nav-tabs .nav-link.active {
+  color: #008B8B;
+  font-weight: 700;
+  border-bottom: 3px solid #008B8B;
+}
+
+/* ======================================================
+   RESPONSIVE
+   ====================================================== */
+@media (max-width: 992px) {
+  .navbar-collapse {
+    padding: 1rem 0;
+  }
+  .navbar-nav .nav-link {
+    padding: 0.5rem 1rem;
+    margin: 2px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-banner         { padding: 2.5rem 0; }
+  .hero-banner h1      { font-size: 2rem; }
+  .table               { font-size: 0.88rem; }
+  .card                { margin-bottom: 1rem; }
+  .carousel-item       { min-height: 280px; }
+  .carousel-caption    { padding: 1.5rem; }
+}
+
+@media (max-width: 576px) {
+  .container           { padding: 0 1rem; }
+  .hero-banner         { padding: 1.5rem 0; }
+  .card-body           { padding: 1rem; }
+  .accordion-body      { padding: 1rem; }
+}

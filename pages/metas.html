@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Metas Académicas y Profesionales - Corina Acosta</title>
+
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="../css/general.css">
+
+  <link rel="icon" type="image/x-icon" href="../multimedia/img/mundito.ico">
+
+  <style>
+    /* Hero section */
+    .hero-section {
+      background: linear-gradient(135deg, #008B8B 0%, #006f6f 100%);
+      color: white;
+      padding: 4rem 0;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .hero-section h1,
+    .hero-section p { color: white; text-shadow: 0 2px 4px rgba(0,0,0,0.2); }
+
+    /* Color utilities */
+    .text-verde   { color: #008B8B !important; }
+    .bg-verde     { background-color: #008B8B !important; }
+    .border-verde { border-color: #008B8B !important; }
+    .shadow-custom { box-shadow: 0 4px 15px rgba(0,139,139,0.15) !important; }
+
+    /* Badges (Bootstrap 4 → Bootstrap 5 compat) */
+    .badge.badge-success  { background-color: #198754; color: white; }
+    .badge.badge-info     { background-color: #0dcaf0; color: #212529; }
+    .badge.badge-warning  { background-color: #ffc107; color: #212529; }
+    .badge.badge-secondary{ background-color: #6c757d; color: white; }
+
+    /* Timeline */
+    .timeline-container { position: relative; padding-left: 0; }
+    .timeline-marker    { margin-bottom: 0.75rem; }
+    .timeline-item      { position: relative; }
+
+    /* Compromisos section spacing */
+    .section-padding { padding: 3rem 0; }
+
+    /* Footer-links inside footer */
+    .footer-links a {
+      display: block;
+      color: rgba(255,255,255,0.85);
+      text-decoration: none;
+      margin-bottom: 0.4rem;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: white; }
+  </style>
+</head>
+
+<body>
+  <!-- ============================================
+       NAVBAR
+       ============================================ -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">
+        <i class="fas fa-user-graduate"></i> Corina Acosta
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sobre mí</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="sobremi/sobremi.html">Sobre mí</a></li>
+              <li><a class="dropdown-item" href="habilidades.html">Habilidades</a></li>
+              <li><a class="dropdown-item active" href="metas.html">Metas</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="multimedia/multimedia.html">Presentación</a></li>
+          <li class="nav-item"><a class="nav-link" href="horario/horario.html">Horario</a></li>
+          <li class="nav-item"><a class="nav-link" href="contenido/contenido.html">Contenido</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Formularios</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="cto/contacto.html">Contacto</a></li>
+              <li><a class="dropdown-item" href="cto/buzon.html">Buzón de Sugerencias</a></li>
+              <li><a class="dropdown-item" href="buscar/buscar.html">Búsqueda</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Proyectos</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="proyectos/proyectos.html">Proyectos</a></li>
+              <li><a class="dropdown-item" href="proyectos-futuros.html">Proyectos Futuros</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="proyeccion.html">Proyección</a></li>
+          <li class="nav-item"><a class="nav-link" href="login/login.html">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============================================
+       HERO SECTION
+       ============================================ -->
+  <div class="hero-section">
+    <div class="container">
+      <h1 class="mb-3">
+        <i class="fas fa-bullseye"></i> Mis Metas Académicas
+      </h1>
+      <p class="lead mb-0">Corina Alejandra Acosta Oliva | Plan Estratégico 2026-2030</p>
+    </div>
+  </div>
+
+  <!-- ============================================
+       CARRUSEL
+       ============================================ -->
+  <div class="container mt-4">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner rounded shadow">
+        <div class="carousel-item active">
+          <img src="../multimedia/img/banner-espe.png" class="d-block w-100" alt="ESPE" style="max-height: 400px; object-fit: cover;">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Excelencia Académica</h5>
+            <p>Mantener el GPA 4.0 y completar la carrera con honores en la ESPE.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../multimedia/img/imagenejemploespe.png" class="d-block w-100" alt="Formación Profesional" style="max-height: 400px; object-fit: cover;">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Arquitecta de Software 2028</h5>
+            <p>Convertirme en Senior Developer con liderazgo técnico y maestría completada.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../multimedia/img/mifoto.jpg" class="d-block w-100" alt="Corina Acosta" style="max-height: 400px; object-fit: cover;">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Impacto Social en Tech</h5>
+            <p>Mentorear mujeres en tecnología y liderar proyectos con impacto en Latinoamérica.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- ============================================
+       MAIN CONTENT
+       ============================================ -->
+  <main>
+    <!-- SECCIÓN 1: VISTA GENERAL -->
+    <section class="container mt-5">
+      <div class="row">
+        <div class="col-12 col-lg-8">
+          <div class="card shadow-custom mb-4">
+            <div class="card-body">
+              <h3 class="text-verde mb-3">
+                <i class="fas fa-binoculars"></i> Visión General
+              </h3>
+              <p class="lead">
+                Mi propósito es convertirme en una profesional integral que combine excelencia técnica con
+                responsabilidad social, liderando proyectos que transformen comunidades a través de la tecnología.
+              </p>
+              <div class="alert alert-info">
+                <i class="fas fa-lightbulb"></i> <strong>Diferenciador:</strong> Especialización en soluciones
+                escalables y sostenibles con impacto social en Latinoamérica.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="card border-verde shadow-custom">
+            <div class="card-header bg-verde text-white">
+              <i class="fas fa-trophy"></i> Meta Principal
+            </div>
+            <div class="card-body">
+              <h5 class="text-verde">Arquitecta de Software 2028</h5>
+              <p class="text-muted">
+                Senior Developer con liderazgo técnico, especialización en arquitecturas distribuidas y maestría
+                completa.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 2: TIMELINE VISUAL -->
+    <section class="bg-light">
+      <div class="container py-5">
+        <h2 class="mb-5">
+          <i class="fas fa-timeline"></i> Línea de Tiempo 2026-2030
+        </h2>
+        <div class="row">
+          <div class="col-12">
+            <!-- Timeline -->
+            <div class="timeline-container">
+              <!-- 2026 -->
+              <div class="timeline-item mb-5">
+                <div class="timeline-marker">
+                  <span class="badge badge-success">2026</span>
+                </div>
+                <div class="card shadow-custom">
+                  <div class="card-header bg-verde text-white">
+                    <h4 class="mb-0">
+                      <i class="fas fa-rocket"></i> Año 1: Dominar Frontend
+                    </h4>
+                  </div>
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-12 col-md-6">
+                        <h5 class="text-verde mb-3">
+                          <i class="fas fa-code"></i> Objetivo Técnico
+                        </h5>
+                        <ul class="list-unstyled">
+                          <li class="mb-2">
+                            <i class="fas fa-check text-verde"></i> <strong>React 18 & TypeScript</strong> - Maestría
+                          </li>
+                          <li class="mb-2">
+                            <i class="fas fa-check text-verde"></i> <strong>Next.js 14</strong> - SSR, SSG, ISR
+                          </li>
+                          <li class="mb-2">
+                            <i class="fas fa-check text-verde"></i> <strong>Testing</strong> - Vitest, React Testing
+                            Library
+                          </li>
+                          <li>
+                            <i class="fas fa-check text-verde"></i> <strong>CSS-in-JS</strong> - Tailwind, Emotion
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <h5 class="text-verde mb-3">
+                          <i class="fas fa-medal"></i> Certificaciones
+                        </h5>
+                        <ul class="list-unstyled">
+                          <li class="mb-2">
+                            <span class="badge badge-success">CSM - Scrum Master</span>
+                          </li>
+                          <li class="mb-2">
+                            <span class="badge badge-success">GitHub Actions Specialist</span>
+                          </li>
+                          <li class="mb-2">
+                            <span class="badge badge-info">Next.js Certified Developer</span>
+                          </li>
+                          <li>
+                            <span class="badge badge-info">React Developer Expert</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <hr>
+                    <h5 class="text-verde mb-3">
+                      <i class="fas fa-project-diagram"></i> Proyecto Integrador
+                    </h5>
+                    <p class="mb-0">
+                      <strong>Plataforma de Mentoría para Mujeres en Tech:</strong> Aplicación full-featured con
+                      autenticación, perfiles, calendario, chat y pagos. Demostración de habilidades frontend
+                      profesionales.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 2027 -->
+              <div class="timeline-item mb-5">
+                <div class="timeline-marker">
+                  <span class="badge badge-info">2027</span>
+                </div>
+                <div class="card shadow-custom">
+                  <div class="card-header bg-verde text-white">
+                    <h4 class="mb-0">
+                      <i class="fas fa-layer-group"></i> Año 2: Especializarme en Backend
+                    </h4>
+                  </div>
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-12 col-md-6">
+                        <h5 class="text-verde mb-3">
+                          <i class="fas fa-database"></i> Objetivo Técnico
+                        </h5>
+                        <ul class="list-unstyled">
+                          <li class="mb-2">
+                            <i class="fas fa-check text-verde"></i> <strong>Node.js & NestJS</strong> - Arquitectura
+                            sólida
+                          </li>
+                          <li class="mb-2">
+                            <i class="fas fa-check text-verde"></i> <strong>PostgreSQL</strong> - Avanzado
+                          </li>
+                          <li class="mb-2">
+                            <i class="fas fa-check text-verde"></i> <strong>REST & GraphQL</strong> - API profesionales
+                          </li>
+                          <li>
+                            <i class="fas fa-check text-verde"></i> <strong>Microservicios</strong> - Arquitectura
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <h5 class="text-verde mb-3">
+                          <i class="fas fa-cloud"></i> Cloud & DevOps
+                        </h5>
+                        <ul class="list-unstyled">
+                          <li class="mb-2">
+                            <span class="badge badge-success">AWS Solutions Architect</span>
+                          </li>
+                          <li class="mb-2">
+                            <span class="badge badge-success">Docker & Kubernetes Basics</span>
+                          </li>
+                          <li class="mb-2">
+                            <span class="badge badge-info">PostgreSQL Avanzado</span>
+                          </li>
+                          <li>
+                            <span class="badge badge-info">CI/CD con GitHub Actions</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <hr>
+                    <h5 class="text-verde mb-3">
+                      <i class="fas fa-graduation-cap"></i> Educación Formal
+                    </h5>
+                    <p>
+                      <strong>Inicio de Maestría en Ingeniería de Software</strong> en ESPE (2 semestres)
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 2028 -->
+              <div class="timeline-item mb-5">
+                <div class="timeline-marker">
+                  <span class="badge badge-success">2028</span>
+                </div>
+                <div class="card shadow-custom">
+                  <div class="card-header bg-verde text-white">
+                    <h4 class="mb-0">
+                      <i class="fas fa-crown"></i> Año 3: Full Stack Senior
+                    </h4>
+                  </div>
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-12 col-md-6">
+                        <h5 class="text-verde mb-3">
+                          <i class="fas fa-cubes"></i> Consolidación
+                        </h5>
+                        <ul class="list-unstyled">
+                          <li class="mb-2">
+                            <i class="fas fa-check text-verde"></i> <strong>Full Stack Master</strong> - Frontend +
+                            Backend
+                          </li>
+                          <li class="mb-2">
+                            <i class="fas fa-check text-verde"></i> <strong>Arquitectura Hexagonal</strong>
+                          </li>
+                          <li class="mb-2">
+                            <i class="fas fa-check text-verde"></i> <strong>Liderazgo Técnico</strong> - Primer role
+                            como Tech Lead
+                          </li>
+                          <li>
+                            <i class="fas fa-check text-verde"></i> <strong>Code Review Master</strong>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <h5 class="text-verde mb-3">
+                          <i class="fas fa-star"></i> Hitos Importantes
+                        </h5>
+                        <ul class="list-unstyled">
+                          <li class="mb-2">
+                            <span class="badge badge-success">Maestría Completada</span>
+                          </li>
+                          <li class="mb-2">
+                            <span class="badge badge-success">Tech Lead en Proyecto Real</span>
+                          </li>
+                          <li class="mb-2">
+                            <span class="badge badge-success">Contribuciones OSS destacadas</span>
+                          </li>
+                          <li>
+                            <span class="badge badge-success">Inglés C1</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <hr>
+                    <h5 class="text-verde mb-3">
+                      <i class="fas fa-lightbulb"></i> Proyectos Personales
+                    </h5>
+                    <p>
+                      <strong>E-commerce Artesanal con IA:</strong> Demostración de expertise full stack integrando
+                      machine learning y cloud.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 2029-2030 -->
+              <div class="timeline-item mb-5">
+                <div class="timeline-marker">
+                  <span class="badge badge-secondary">2029-2030</span>
+                </div>
+                <div class="card shadow-custom">
+                  <div class="card-header bg-verde text-white">
+                    <h4 class="mb-0">
+                      <i class="fas fa-rocket"></i> Años 4-5: Arquitecta & Especialista
+                    </h4>
+                  </div>
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-12 col-md-6">
+                        <h5 class="text-verde mb-3">
+                          <i class="fas fa-brain"></i> Especializaciones
+                        </h5>
+                        <ul class="list-unstyled">
+                          <li class="mb-2">
+                            <i class="fas fa-check text-verde"></i> <strong>IA Aplicada</strong> - Diplomado
+                            completado
+                          </li>
+                          <li class="mb-2">
+                            <i class="fas fa-check text-verde"></i> <strong>ML Engineering</strong>
+                          </li>
+                          <li class="mb-2">
+                            <i class="fas fa-check text-verde"></i> <strong>Data Engineering</strong>
+                          </li>
+                          <li>
+                            <i class="fas fa-check text-verde"></i> <strong>Platform Engineering</strong>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <h5 class="text-verde mb-3">
+                          <i class="fas fa-people"></i> Impacto Social
+                        </h5>
+                        <ul class="list-unstyled">
+                          <li class="mb-2">
+                            <span class="badge badge-success">Mentoría Activa</span>
+                          </li>
+                          <li class="mb-2">
+                            <span class="badge badge-success">Developer Advocate</span>
+                          </li>
+                          <li class="mb-2">
+                            <span class="badge badge-success">Charlas & Conferencias</span>
+                          </li>
+                          <li>
+                            <span class="badge badge-success">Comunidad Tech Ecuador</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <hr>
+                    <h5 class="text-verde mb-3">
+                      <i class="fas fa-award"></i> Posición Objetivo
+                    </h5>
+                    <p>
+                      <strong>Arquitecta de Software Senior</strong> en empresa tech internacional, con capacidad de
+                      liderazgo estratégico e impacto global.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 3: METAS DETALLADAS POR CATEGORÍA -->
+    <section class="container mt-5 mb-5">
+      <h2 class="mb-5">
+        <i class="fas fa-list-check"></i> Metas por Categoría
+      </h2>
+
+      <div class="row">
+        <!-- Metas Académicas -->
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="card h-100">
+            <div class="card-header">
+              <i class="fas fa-graduation-cap"></i> Académicas
+            </div>
+            <div class="card-body">
+              <div class="mb-3">
+                <h6 class="text-verde mb-2">
+                  <i class="fas fa-square-check"></i> Corto Plazo (2026)
+                </h6>
+                <ul class="list-unstyled small">
+                  <li>✓ Mantener GPA 4.0</li>
+                  <li>✓ Completar Fundamentos Web</li>
+                  <li>✓ Cursos online complementarios</li>
+                </ul>
+              </div>
+              <div class="mb-3">
+                <h6 class="text-verde mb-2">
+                  <i class="fas fa-square-check"></i> Mediano Plazo (2027-2028)
+                </h6>
+                <ul class="list-unstyled small">
+                  <li>✓ Maestría en Ing. Software</li>
+                  <li>✓ Tesina de grado sobresaliente</li>
+                  <li>✓ Publicaciones académicas</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Metas Técnicas -->
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="card h-100">
+            <div class="card-header">
+              <i class="fas fa-code"></i> Técnicas
+            </div>
+            <div class="card-body">
+              <div class="mb-3">
+                <h6 class="text-verde mb-2">
+                  <i class="fas fa-square-check"></i> Frontend (2026)
+                </h6>
+                <ul class="list-unstyled small">
+                  <li>✓ React expert level</li>
+                  <li>✓ TypeScript advanced</li>
+                  <li>✓ Performance optimization</li>
+                </ul>
+              </div>
+              <div class="mb-3">
+                <h6 class="text-verde mb-2">
+                  <i class="fas fa-square-check"></i> Backend (2027-2028)
+                </h6>
+                <ul class="list-unstyled small">
+                  <li>✓ Node.js/NestJS mastery</li>
+                  <li>✓ Database design</li>
+                  <li>✓ System architecture</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Metas Profesionales -->
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="card h-100">
+            <div class="card-header">
+              <i class="fas fa-briefcase"></i> Profesionales
+            </div>
+            <div class="card-body">
+              <div class="mb-3">
+                <h6 class="text-verde mb-2">
+                  <i class="fas fa-square-check"></i> Experiencia
+                </h6>
+                <ul class="list-unstyled small">
+                  <li>✓ Practicantes profesionales</li>
+                  <li>✓ Proyectos reales comerciales</li>
+                  <li>✓ Mentoría de junior devs</li>
+                </ul>
+              </div>
+              <div class="mb-3">
+                <h6 class="text-verde mb-2">
+                  <i class="fas fa-square-check"></i> Liderazgo
+                </h6>
+                <ul class="list-unstyled small">
+                  <li>✓ Tech Lead role</li>
+                  <li>✓ Team coordination</li>
+                  <li>✓ Decision making</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Metas de Certificación -->
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="card h-100">
+            <div class="card-header">
+              <i class="fas fa-certificate"></i> Certificaciones
+            </div>
+            <div class="card-body">
+              <div class="mb-3">
+                <h6 class="text-verde mb-2">
+                  <i class="fas fa-medal"></i> 2026
+                </h6>
+                <ul class="list-unstyled small">
+                  <li>✓ CSM - Scrum Master</li>
+                  <li>✓ GitHub Actions</li>
+                  <li>✓ Next.js Certified</li>
+                </ul>
+              </div>
+              <div class="mb-3">
+                <h6 class="text-verde mb-2">
+                  <i class="fas fa-medal"></i> 2027-2030
+                </h6>
+                <ul class="list-unstyled small">
+                  <li>✓ AWS Solutions Architect</li>
+                  <li>✓ Inglés C1</li>
+                  <li>✓ Más especializaciones</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Metas de Impacto Social -->
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="card h-100">
+            <div class="card-header">
+              <i class="fas fa-heart"></i> Impacto Social
+            </div>
+            <div class="card-body">
+              <div class="mb-3">
+                <h6 class="text-verde mb-2">
+                  <i class="fas fa-handshake"></i> Mentoría
+                </h6>
+                <ul class="list-unstyled small">
+                  <li>✓ Mentoring women in tech</li>
+                  <li>✓ Grassroots initiatives</li>
+                  <li>✓ Community projects</li>
+                </ul>
+              </div>
+              <div class="mb-3">
+                <h6 class="text-verde mb-2">
+                  <i class="fas fa-microphone"></i> Visibilidad
+                </h6>
+                <ul class="list-unstyled small">
+                  <li>✓ Conferencias & charlas</li>
+                  <li>✓ Developer advocate</li>
+                  <li>✓ Blog técnico</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Metas de Crecimiento Personal -->
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="card h-100">
+            <div class="card-header">
+              <i class="fas fa-person-hiking"></i> Crecimiento Personal
+            </div>
+            <div class="card-body">
+              <div class="mb-3">
+                <h6 class="text-verde mb-2">
+                  <i class="fas fa-language"></i> Idiomas
+                </h6>
+                <ul class="list-unstyled small">
+                  <li>✓ Inglés C1 (2027)</li>
+                  <li>✓ Comunicación efectiva</li>
+                  <li>✓ Presentaciones públicas</li>
+                </ul>
+              </div>
+              <div class="mb-3">
+                <h6 class="text-verde mb-2">
+                  <i class="fas fa-brain"></i> Soft Skills
+                </h6>
+                <ul class="list-unstyled small">
+                  <li>✓ Liderazgo empático</li>
+                  <li>✓ Comunicación clara</li>
+                  <li>✓ Resiliencia</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 4: COMPROMISOS Y ACCIONES -->
+    <section class="bg-light">
+      <div class="container py-5">
+        <h2 class="mb-5">
+          <i class="fas fa-tasks"></i> Compromisos Concretos
+        </h2>
+
+        <div class="row">
+          <div class="col-12 col-lg-8 mx-auto">
+            <div class="accordion" id="accordionAcciones">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseAccion1" aria-expanded="true" aria-controls="collapseAccion1">
+                    <i class="fas fa-code"></i> Dedicar 20+ horas/semana a práctica y aprendizaje
+                    <span class="badge badge-success ms-2">Prioritario</span>
+                  </button>
+                </h2>
+                <div id="collapseAccion1" class="accordion-collapse collapse show"
+                  data-bs-parent="#accordionAcciones">
+                  <div class="accordion-body">
+                    <p><strong>Desglose semanal:</strong></p>
+                    <ul>
+                      <li>8-10 horas: Proyectos personales</li>
+                      <li>5-7 horas: Cursos online</li>
+                      <li>4-5 horas: Lecturas y documentación</li>
+                      <li>3 horas: Contribuciones open source</li>
+                    </ul>
+                    <div class="alert alert-success mt-3">
+                      <small><i class="fas fa-check-circle"></i> Sistema de seguimiento: Notion tracker + GitHub
+                        commits</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseAccion2" aria-expanded="false" aria-controls="collapseAccion2">
+                    <i class="fas fa-users"></i> Mentoría: Ayudar a 5+ mujeres en tecnología
+                    <span class="badge badge-info ms-2">Futuro</span>
+                  </button>
+                </h2>
+                <div id="collapseAccion2" class="accordion-collapse collapse" data-bs-parent="#accordionAcciones">
+                  <div class="accordion-body">
+                    <p><strong>Plan de acción:</strong></p>
+                    <ul>
+                      <li>2026: Mentoría informal a 2-3 personas</li>
+                      <li>2027: Programa formal con 5 mentoradas</li>
+                      <li>2028+: Escalar a 10+ participantes</li>
+                    </ul>
+                    <p><strong>Modalidades:</strong> 1-on-1 meetings, group workshops, pair programming</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseAccion3" aria-expanded="false" aria-controls="collapseAccion3">
+                    <i class="fas fa-github"></i> Contribuciones Open Source significativas
+                    <span class="badge badge-warning ms-2">En progreso</span>
+                  </button>
+                </h2>
+                <div id="collapseAccion3" class="accordion-collapse collapse" data-bs-parent="#accordionAcciones">
+                  <div class="accordion-body">
+                    <p><strong>Objetivos:</strong></p>
+                    <ul>
+                      <li>2026: 50+ commits en proyectos reputados</li>
+                      <li>2027: Feature completa en proyecto major</li>
+                      <li>2028: Mantenedor de librería propia</li>
+                    </ul>
+                    <p><strong>Proyectos objetivo:</strong> React, Next.js, Node.js ecosystem</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseAccion4" aria-expanded="false" aria-controls="collapseAccion4">
+                    <i class="fas fa-blog"></i> Crear contenido técnico regularmente
+                    <span class="badge badge-secondary ms-2">Por empezar</span>
+                  </button>
+                </h2>
+                <div id="collapseAccion4" class="accordion-collapse collapse" data-bs-parent="#accordionAcciones">
+                  <div class="accordion-body">
+                    <p><strong>Plan de contenido:</strong></p>
+                    <ul>
+                      <li><strong>Blog técnico:</strong> 2 artículos/mes sobre learnings</li>
+                      <li><strong>Videos:</strong> Tutoriales en YouTube (futuro)</li>
+                      <li><strong>Conferencias:</strong> 1-2 charlas anuales</li>
+                    </ul>
+                    <p><strong>Temas:</strong> React patterns, TypeScript advanced, Architecture, Career</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-12 col-md-4 mb-3 mb-md-0">
+          <h5>
+            <i class="fas fa-rocket"></i> Mi Proyección
+          </h5>
+          <p class="text-muted">
+            Desarrolladora Web | Arquitecta de Software en Formación
+          </p>
+        </div>
+        <div class="col-12 col-md-4 mb-3 mb-md-0">
+          <h5>Enlaces Rápidos</h5>
+          <div class="footer-links">
+            <a href="../proyeccion.html">
+              <i class="fas fa-home"></i> Inicio
+            </a>
+            <a href="metas.html">
+              <i class="fas fa-bullseye"></i> Metas
+            </a>
+            <a href="habilidades.html">
+              <i class="fas fa-star"></i> Habilidades
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <h5>Comunidad</h5>
+          <div class="footer-links">
+            <a href="#">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="#">
+              <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="#">
+              <i class="fab fa-twitter"></i> Twitter
+            </a>
+          </div>
+        </div>
+      </div>
+      <hr class="my-4">
+      <p class="mb-2">
+        <strong>© 2026 Corina Alejandra Acosta Oliva</strong>
+      </p>
+      <p class="text-muted mb-0">
+        Fundamentos Web - Universidad de las Fuerzas Armadas ESPE | Ecuador
+      </p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5.3 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

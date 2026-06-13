@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyectos Futuros - Corina Acosta</title>
+
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="../css/general.css">
+
+  <link rel="icon" type="image/x-icon" href="../multimedia/img/mundito.ico">
+</head>
+
+<body>
+  <!-- ============================================
+       NAVBAR
+       ============================================ -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">
+        <i class="fas fa-user-graduate"></i> Corina Acosta
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sobre mí</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="sobremi/sobremi.html">Sobre mí</a></li>
+              <li><a class="dropdown-item" href="habilidades.html">Habilidades</a></li>
+              <li><a class="dropdown-item" href="metas.html">Metas</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="multimedia/multimedia.html">Presentación</a></li>
+          <li class="nav-item"><a class="nav-link" href="horario/horario.html">Horario</a></li>
+          <li class="nav-item"><a class="nav-link" href="contenido/contenido.html">Contenido</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Formularios</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="cto/contacto.html">Contacto</a></li>
+              <li><a class="dropdown-item" href="cto/buzon.html">Buzón de Sugerencias</a></li>
+              <li><a class="dropdown-item" href="buscar/buscar.html">Búsqueda</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Proyectos</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="proyectos/proyectos.html">Proyectos</a></li>
+              <li><a class="dropdown-item active" href="proyectos-futuros.html">Proyectos Futuros</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="proyeccion.html">Proyección</a></li>
+          <li class="nav-item"><a class="nav-link" href="login/login.html">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============================================
+       HERO SECTION
+       ============================================ -->
+  <div class="hero-section">
+    <div class="container">
+      <h1 class="mb-3">
+        <i class="fas fa-lightbulb"></i> Proyectos Futuros
+      </h1>
+      <p class="lead mb-0">Corina Alejandra Acosta Oliva | Ideas con Impacto Social</p>
+    </div>
+  </div>
+
+  <!-- ============================================
+       MAIN CONTENT
+       ============================================ -->
+  <main>
+    <!-- SECCIÓN 1: INTRODUCCIÓN -->
+    <section class="container mt-5">
+      <div class="alert alert-success">
+        <i class="fas fa-star"></i> <strong>Filosofía:</strong> Crear soluciones tecnológicas que generen impacto
+        positivo en Ecuador y Latinoamérica, con especial enfoque en empoderamiento económico y educación.
+      </div>
+    </section>
+
+    <!-- SECCIÓN 2: GRID DE PROYECTOS -->
+    <section class="bg-light">
+      <div class="container py-5">
+        <h2 class="mb-5">
+          <i class="fas fa-grid"></i> Mis Proyectos Ideales
+        </h2>
+
+        <div class="row g-4">
+          <!-- Proyecto 1 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img src="../multimedia/img/plataforma_mentoria.jpg" class="card-img-top" alt="Plataforma de Mentoría">
+              <div class="card-body">
+                <h5 class="card-title text-verde">
+                  <i class="fas fa-handshake"></i> Plataforma de Mentoría
+                </h5>
+                <p class="text-muted mb-3">Conectar mentoras expertas con mujeres en tecnología, facilitando
+                  aprendizaje, networking y crecimiento profesional.</p>
+                <div class="mb-3">
+                  <span class="badge badge-success">React</span>
+                  <span class="badge badge-success">Node.js</span>
+                  <span class="badge badge-success">PostgreSQL</span>
+                  <span class="badge badge-success">Stripe</span>
+                </div>
+              </div>
+              <div class="card-footer bg-white border-top">
+                <button type="button" class="btn btn-primary btn-sm w-100" data-bs-toggle="modal"
+                  data-bs-target="#modalProyecto1">
+                  <i class="fas fa-expand"></i> Ver Detalles Completos
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto 2 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img src="../multimedia/img/e-commer.jpg" class="card-img-top" alt="E-commerce Artesanal">
+              <div class="card-body">
+                <h5 class="card-title text-verde">
+                  <i class="fas fa-shopping-cart"></i> E-commerce Artesanal
+                </h5>
+                <p class="text-muted mb-3">Plataforma de venta para artesanos ecuatorianos con IA inteligente,
+                  recomendaciones personalizadas y chatbot multiidioma.</p>
+                <div class="mb-3">
+                  <span class="badge badge-success">Next.js</span>
+                  <span class="badge badge-success">Django</span>
+                  <span class="badge badge-success">OpenAI</span>
+                  <span class="badge badge-success">MongoDB</span>
+                </div>
+              </div>
+              <div class="card-footer bg-white border-top">
+                <button type="button" class="btn btn-primary btn-sm w-100" data-bs-toggle="modal"
+                  data-bs-target="#modalProyecto2">
+                  <i class="fas fa-expand"></i> Ver Detalles Completos
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto 3 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img src="../multimedia/img/Dashboard_Educativo.jpg" class="card-img-top" alt="Dashboard Educativo">
+              <div class="card-body">
+                <h5 class="card-title text-verde">
+                  <i class="fas fa-chart-line"></i> Dashboard Educativo
+                </h5>
+                <p class="text-muted mb-3">Sistema de análisis de datos educativos para instituciones, con predicciones
+                  IA y reportes inteligentes.</p>
+                <div class="mb-3">
+                  <span class="badge badge-success">React</span>
+                  <span class="badge badge-success">FastAPI</span>
+                  <span class="badge badge-success">PostgreSQL</span>
+                  <span class="badge badge-success">D3.js</span>
+                </div>
+              </div>
+              <div class="card-footer bg-white border-top">
+                <button type="button" class="btn btn-primary btn-sm w-100" data-bs-toggle="modal"
+                  data-bs-target="#modalProyecto3">
+                  <i class="fas fa-expand"></i> Ver Detalles Completos
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto 4 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img src="../multimedia/img/App_educativa.jpg" class="card-img-top" alt="App Educativa">
+              <div class="card-body">
+                <h5 class="card-title text-verde">
+                  <i class="fas fa-mobile-alt"></i> App Educativa Mobile
+                </h5>
+                <p class="text-muted mb-3">Aplicación móvil de aprendizaje adaptativo con IA para estudiantes
+                  ecuatorianos de zonas rurales.</p>
+                <div class="mb-3">
+                  <span class="badge badge-success">React Native</span>
+                  <span class="badge badge-success">Firebase</span>
+                  <span class="badge badge-success">TensorFlow</span>
+                  <span class="badge badge-info">En ideas</span>
+                </div>
+              </div>
+              <div class="card-footer bg-white border-top">
+                <button type="button" class="btn btn-primary btn-sm w-100" data-bs-toggle="modal"
+                  data-bs-target="#modalProyecto4">
+                  <i class="fas fa-expand"></i> Ver Detalles Completos
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto 5 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img src="../multimedia/img/Gestor_Startups.jpg" class="card-img-top" alt="Gestor Startups">
+              <div class="card-body">
+                <h5 class="card-title text-verde">
+                  <i class="fas fa-rocket"></i> Gestor de Startups
+                </h5>
+                <p class="text-muted mb-3">Plataforma colaborativa para emprendedores en Ecuador, con herramientas
+                  de gestión, networking e inversión.</p>
+                <div class="mb-3">
+                  <span class="badge badge-success">Next.js</span>
+                  <span class="badge badge-success">NestJS</span>
+                  <span class="badge badge-success">WebSockets</span>
+                  <span class="badge badge-info">Fase inicial</span>
+                </div>
+              </div>
+              <div class="card-footer bg-white border-top">
+                <button type="button" class="btn btn-primary btn-sm w-100" data-bs-toggle="modal"
+                  data-bs-target="#modalProyecto5">
+                  <i class="fas fa-expand"></i> Ver Detalles Completos
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto 6 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img src="../multimedia/img/SaaS_Consultoría_Empresarial.jpg" class="card-img-top" alt="SaaS Consultoría">
+              <div class="card-body">
+                <h5 class="card-title text-verde">
+                  <i class="fas fa-building"></i> SaaS Consultoría Empresarial
+                </h5>
+                <p class="text-muted mb-3">Plataforma SaaS para consultoría empresarial con BI avanzado y
+                  automatización de procesos.</p>
+                <div class="mb-3">
+                  <span class="badge badge-success">React</span>
+                  <span class="badge badge-success">GraphQL</span>
+                  <span class="badge badge-success">Kubernetes</span>
+                  <span class="badge badge-secondary">Long-term</span>
+                </div>
+              </div>
+              <div class="card-footer bg-white border-top">
+                <button type="button" class="btn btn-primary btn-sm w-100" data-bs-toggle="modal"
+                  data-bs-target="#modalProyecto6">
+                  <i class="fas fa-expand"></i> Ver Detalles Completos
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 3: ROADMAP DE LANZAMIENTOS -->
+    <section class="container mt-5 mb-5">
+      <h2 class="mb-5">
+        <i class="fas fa-calendar-alt"></i> Roadmap de Proyectos
+      </h2>
+
+      <div class="row">
+        <div class="col-12 col-lg-10 mx-auto">
+          <div class="card">
+            <div class="card-body">
+              <div class="row align-items-center mb-4 pb-3 border-bottom">
+                <div class="col-3 col-md-2">
+                  <span class="badge badge-success p-2">2026</span>
+                </div>
+                <div class="col-9 col-md-10">
+                  <h5 class="mb-2">Plataforma de Mentoría</h5>
+                  <p class="text-muted mb-0">MVP funcional, primeras 50 usuarias beta, validación de producto</p>
+                </div>
+              </div>
+
+              <div class="row align-items-center mb-4 pb-3 border-bottom">
+                <div class="col-3 col-md-2">
+                  <span class="badge badge-info p-2">2026-2027</span>
+                </div>
+                <div class="col-9 col-md-10">
+                  <h5 class="mb-2">E-commerce Artesanal</h5>
+                  <p class="text-muted mb-0">MVP con IA básica, integración con artesanos, primeras ventas reales
+                  </p>
+                </div>
+              </div>
+
+              <div class="row align-items-center mb-4 pb-3 border-bottom">
+                <div class="col-3 col-md-2">
+                  <span class="badge badge-info p-2">2027</span>
+                </div>
+                <div class="col-9 col-md-10">
+                  <h5 class="mb-2">Dashboard Educativo</h5>
+                  <p class="text-muted mb-0">Prototipo, validación en 2-3 instituciones educativas piloto</p>
+                </div>
+              </div>
+
+              <div class="row align-items-center mb-4 pb-3 border-bottom">
+                <div class="col-3 col-md-2">
+                  <span class="badge badge-secondary p-2">2027-2028</span>
+                </div>
+                <div class="col-9 col-md-10">
+                  <h5 class="mb-2">App Educativa Mobile</h5>
+                  <p class="text-muted mb-0">Desarrollo inicial, research con estudiantes target</p>
+                </div>
+              </div>
+
+              <div class="row align-items-center mb-4 pb-3 border-bottom">
+                <div class="col-3 col-md-2">
+                  <span class="badge badge-secondary p-2">2028</span>
+                </div>
+                <div class="col-9 col-md-10">
+                  <h5 class="mb-2">Gestor de Startups</h5>
+                  <p class="text-muted mb-0">Fase de concepto, networking con emprendedores</p>
+                </div>
+              </div>
+
+              <div class="row align-items-center">
+                <div class="col-3 col-md-2">
+                  <span class="badge badge-secondary p-2">2029+</span>
+                </div>
+                <div class="col-9 col-md-10">
+                  <h5 class="mb-2">SaaS Empresarial & Más</h5>
+                  <p class="text-muted mb-0">Escalamiento, internacionalización, nuevos productos</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================
+       MODALES
+       ============================================ -->
+
+  <!-- Modal Proyecto 1 -->
+  <div class="modal fade" id="modalProyecto1" tabindex="-1" aria-labelledby="modalProyecto1Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="modalProyecto1Label">
+            <i class="fas fa-handshake"></i> Plataforma de Mentoría - Detalles Completos
+          </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h5 class="text-verde mb-3">Descripción</h5>
+          <p>
+            Plataforma digital que conecta mentoras profesionales en tecnología con mujeres interesadas en iniciar o
+            avanzar su carrera. Incluye herramientas de mentoría 1-on-1, grupos de estudio, recursos educativos y
+            comunidad.
+          </p>
+
+          <h5 class="text-verde mt-4 mb-3">Características</h5>
+          <ul>
+            <li>Perfiles detallados de mentoras y mentoradas</li>
+            <li>Búsqueda avanzada por especialidad, experiencia, disponibilidad</li>
+            <li>Calendario integrado para sesiones</li>
+            <li>Chat en tiempo real con notificaciones</li>
+            <li>Videollamadas integradas (Zoom/Jitsi)</li>
+            <li>Sistema de ratings y testimonios</li>
+            <li>Recursos compartidos (libros, cursos, artículos)</li>
+            <li>Comunidad con forums de discusión</li>
+          </ul>
+
+          <h5 class="text-verde mt-4 mb-3">Stack Técnico</h5>
+          <div>
+            <span class="badge badge-success">React 18</span>
+            <span class="badge badge-success">TypeScript</span>
+            <span class="badge badge-success">Next.js</span>
+            <span class="badge badge-success">Node.js</span>
+            <span class="badge badge-success">Express</span>
+            <span class="badge badge-success">PostgreSQL</span>
+            <span class="badge badge-success">WebSockets</span>
+            <span class="badge badge-success">Stripe</span>
+            <span class="badge badge-success">AWS S3</span>
+          </div>
+
+          <h5 class="text-verde mt-4 mb-3">Modelo de Negocio</h5>
+          <p>
+            <strong>Freemium:</strong> Acceso gratuito limitado. Suscripciones premium para mentoras ($20-50/mes)
+            y mentoradas ($10-30/mes). Comisión por sesiones pagadas.
+          </p>
+
+          <h5 class="text-verde mt-4 mb-3">Timeline</h5>
+          <ul>
+            <li><strong>Mes 1-2:</strong> Diseño UI/UX, setup inicial</li>
+            <li><strong>Mes 3-4:</strong> Backend y autenticación</li>
+            <li><strong>Mes 5-6:</strong> Frontend y integración</li>
+            <li><strong>Mes 7:</strong> Testing y optimización</li>
+            <li><strong>Mes 8:</strong> Beta launch con 50 usuarias</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Proyecto 2 -->
+  <div class="modal fade" id="modalProyecto2" tabindex="-1" aria-labelledby="modalProyecto2Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="modalProyecto2Label">
+            <i class="fas fa-shopping-cart"></i> E-commerce Artesanal - Detalles Completos
+          </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h5 class="text-verde mb-3">Descripción</h5>
+          <p>
+            Marketplace que empodera a artesanos ecuatorianos proporcionando una plataforma digital moderna con
+            herramientas avanzadas de marketing, analítica y servicio al cliente.
+          </p>
+
+          <h5 class="text-verde mt-4 mb-3">Características Principales</h5>
+          <ul>
+            <li>Catálogo de productos con fotos 360°</li>
+            <li>Recomendaciones personalizadas (ML)</li>
+            <li>Chatbot IA multiidioma (esp-eng-quichua)</li>
+            <li>Búsqueda con filtros avanzados</li>
+            <li>Carrito y checkout seguro</li>
+            <li>Pagos con Stripe, PayPal, transferencia</li>
+            <li>Dashboard para vendedores</li>
+            <li>Análisis de ventas y tendencias</li>
+            <li>Programa de fidelización</li>
+          </ul>
+
+          <h5 class="text-verde mt-4 mb-3">Tecnología IA Integrada</h5>
+          <ul>
+            <li><strong>OpenAI API:</strong> Chatbot inteligente 24/7</li>
+            <li><strong>Recomendaciones ML:</strong> Scikit-learn para sugerencias</li>
+            <li><strong>NLP:</strong> Análisis de sentimientos en reviews</li>
+            <li><strong>Predicción:</strong> Demanda y tendencias</li>
+          </ul>
+
+          <h5 class="text-verde mt-4 mb-3">Stack Técnico</h5>
+          <div>
+            <span class="badge badge-success">Next.js</span>
+            <span class="badge badge-success">Django</span>
+            <span class="badge badge-success">Python</span>
+            <span class="badge badge-success">MongoDB</span>
+            <span class="badge badge-success">OpenAI API</span>
+            <span class="badge badge-success">AWS</span>
+            <span class="badge badge-success">Docker</span>
+          </div>
+
+          <h5 class="text-verde mt-4 mb-3">Impacto Social</h5>
+          <p>
+            Genera empleo directo para artesanos, aumenta visibilidad de productos ecuatorianos a nivel global,
+            reduce intermediarios, mejora ingresos.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Proyecto 3 -->
+  <div class="modal fade" id="modalProyecto3" tabindex="-1" aria-labelledby="modalProyecto3Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="modalProyecto3Label">
+            <i class="fas fa-chart-line"></i> Dashboard Educativo - Detalles Completos
+          </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h5 class="text-verde mb-3">Descripción</h5>
+          <p>
+            Sistema integral de análisis de datos educativos que proporciona insights en tiempo real sobre desempeño
+            estudiantil, identifica patrones de riesgo académico y genera reportes predictivos automatizados.
+          </p>
+
+          <h5 class="text-verde mt-4 mb-3">Dashboards Incluidos</h5>
+          <ul>
+            <li><strong>Docentes:</strong> Seguimiento de estudiantes, rendimiento por tema, recomendaciones</li>
+            <li><strong>Administración:</strong> KPIs institucionales, cohortes, tendencias</li>
+            <li><strong>Estudiantes:</strong> Mi progreso, comparativa con pares, metas</li>
+            <li><strong>Predicción de Riesgo:</strong> ML para identificar estudiantes en riesgo</li>
+          </ul>
+
+          <h5 class="text-verde mt-4 mb-3">Inteligencia Artificial</h5>
+          <ul>
+            <li>Predicción de deserción escolar</li>
+            <li>Identificación de estilos de aprendizaje</li>
+            <li>Recomendaciones personalizadas de recursos</li>
+            <li>Reportes generados con GPT</li>
+            <li>Alertas automáticas para intervención</li>
+          </ul>
+
+          <h5 class="text-verde mt-4 mb-3">Stack Técnico</h5>
+          <div>
+            <span class="badge badge-success">React</span>
+            <span class="badge badge-success">D3.js</span>
+            <span class="badge badge-success">FastAPI</span>
+            <span class="badge badge-success">PostgreSQL</span>
+            <span class="badge badge-success">Redis</span>
+            <span class="badge badge-success">Python/scikit-learn</span>
+            <span class="badge badge-success">AWS Lambda</span>
+          </div>
+
+          <h5 class="text-verde mt-4 mb-3">Modelo de Negocio</h5>
+          <p>
+            B2B SaaS: Suscripción por institución (5000-50000 USD/año según tamaño). Incluye setup, entrenamiento,
+            soporte.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Proyecto 4 -->
+  <div class="modal fade" id="modalProyecto4" tabindex="-1" aria-labelledby="modalProyecto4Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="modalProyecto4Label">
+            <i class="fas fa-mobile-alt"></i> App Educativa Mobile - Detalles
+          </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h5 class="text-verde mb-3">Descripción</h5>
+          <p>
+            Aplicación móvil de aprendizaje adaptativo con IA para estudiantes de zonas rurales de Ecuador, sin
+            dependencia de internet permanente.
+          </p>
+
+          <h5 class="text-verde mt-4 mb-3">Características</h5>
+          <ul>
+            <li>Contenido offline-first</li>
+            <li>Adaptación automática al nivel del estudiante</li>
+            <li>Gamificación y motivación</li>
+            <li>Sincronización inteligente cuando hay conexión</li>
+            <li>Bajo consumo de datos</li>
+            <li>Acceso con poco almacenamiento</li>
+          </ul>
+
+          <h5 class="text-verde mt-4 mb-3">Stack Técnico</h5>
+          <div>
+            <span class="badge badge-success">React Native</span>
+            <span class="badge badge-success">Firebase</span>
+            <span class="badge badge-success">TensorFlow Lite</span>
+            <span class="badge badge-success">Realm</span>
+          </div>
+
+          <h5 class="text-verde mt-4 mb-3">Estado Actual</h5>
+          <p><span class="badge badge-secondary">En Ideación - Lanzamiento 2027-2028</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Proyecto 5 -->
+  <div class="modal fade" id="modalProyecto5" tabindex="-1" aria-labelledby="modalProyecto5Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="modalProyecto5Label">
+            <i class="fas fa-rocket"></i> Gestor de Startups - Detalles
+          </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h5 class="text-verde mb-3">Descripción</h5>
+          <p>
+            Plataforma colaborativa que une emprendedores, inversores y servicios en un ecosistema integral para
+            impulsar startups en Ecuador.
+          </p>
+
+          <h5 class="text-verde mt-4 mb-3">Stack Técnico</h5>
+          <div>
+            <span class="badge badge-success">Next.js</span>
+            <span class="badge badge-success">NestJS</span>
+            <span class="badge badge-success">WebSockets</span>
+            <span class="badge badge-success">PostgreSQL</span>
+          </div>
+
+          <h5 class="text-verde mt-4 mb-3">Estado Actual</h5>
+          <p><span class="badge badge-secondary">En Fase Inicial - Concepto 2026-2027</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Proyecto 6 -->
+  <div class="modal fade" id="modalProyecto6" tabindex="-1" aria-labelledby="modalProyecto6Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="modalProyecto6Label">
+            <i class="fas fa-building"></i> SaaS Empresarial - Detalles
+          </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h5 class="text-verde mb-3">Descripción</h5>
+          <p>
+            Plataforma SaaS enterprise-grade para consultoría empresarial con Business Intelligence avanzado y
+            automatización de procesos.
+          </p>
+
+          <h5 class="text-verde mt-4 mb-3">Stack Técnico</h5>
+          <div>
+            <span class="badge badge-success">React</span>
+            <span class="badge badge-success">GraphQL</span>
+            <span class="badge badge-success">Kubernetes</span>
+            <span class="badge badge-success">AWS</span>
+          </div>
+
+          <h5 class="text-verde mt-4 mb-3">Estado Actual</h5>
+          <p><span class="badge badge-secondary">Long-term - Post-2029</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer>
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-12 col-md-4 mb-3 mb-md-0">
+          <h5>
+            <i class="fas fa-rocket"></i> Mi Proyección
+          </h5>
+          <p class="text-muted">
+            Desarrolladora Web | Arquitecta de Software en Formación
+          </p>
+        </div>
+        <div class="col-12 col-md-4 mb-3 mb-md-0">
+          <h5>Enlaces Rápidos</h5>
+          <div class="footer-links">
+            <a href="../proyeccion.html">
+              <i class="fas fa-home"></i> Inicio
+            </a>
+            <a href="metas.html">
+              <i class="fas fa-bullseye"></i> Metas
+            </a>
+            <a href="habilidades.html">
+              <i class="fas fa-star"></i> Habilidades
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <h5>Comunidad</h5>
+          <div class="footer-links">
+            <a href="#">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="#">
+              <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="#">
+              <i class="fab fa-twitter"></i> Twitter
+            </a>
+          </div>
+        </div>
+      </div>
+      <hr class="my-4">
+      <p class="mb-2">
+        <strong>© 2026 Corina Alejandra Acosta Oliva</strong>
+      </p>
+      <p class="text-muted mb-0">
+        Fundamentos Web - Universidad de las Fuerzas Armadas ESPE | Ecuador
+      </p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5.3 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

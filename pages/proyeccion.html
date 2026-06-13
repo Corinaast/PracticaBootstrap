@@ -1,0 +1,1335 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyección Personal - Corina Acosta | ESPE</title>
+
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- General CSS compartido -->
+  <link rel="stylesheet" href="../css/general.css">
+  <link rel="icon" type="image/x-icon" href="../multimedia/img/mundito.ico">
+  <style>
+    /* Fondos del carousel principal */
+    .carousel-slide-bg-1,
+    .carousel-slide-bg-2,
+    .carousel-slide-bg-3 { min-height: 340px; }
+    .carousel-slide-bg-1 { background: linear-gradient(135deg, #e0f4f4 0%, #b2dfdf 100%); }
+    .carousel-slide-bg-2 { background: linear-gradient(135deg, #e8f0fb 0%, #c5d8f5 100%); }
+    .carousel-slide-bg-3 { background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%); }
+
+    /* Carousel dentro del acordeón */
+    .carousel-inner-accordion { border-radius: 0; box-shadow: none; }
+    .carousel-inner-accordion .carousel-item { min-height: 300px; }
+
+    /* Botones oscuros para carousels sobre fondos claros */
+    .carousel-btn-dark { background-color: rgba(0,0,0,0.3) !important; }
+    .carousel-btn-dark:hover { background-color: rgba(0,0,0,0.55) !important; }
+
+    /* Indicadores oscuros */
+    .carousel-indicators-dark [data-bs-target] { background-color: rgba(0,0,0,0.35); }
+    .carousel-indicators-dark .active { background-color: #333; }
+
+    /* Contenido centrado en slides del acordeón */
+    .carousel-slide-content { width: 100%; }
+
+    /* Etiqueta encima de progress bar */
+    .skill-label { font-weight: 500; margin-bottom: 0.35rem; font-size: 0.93rem; }
+
+    /* Punto de la línea de tiempo */
+    .timeline-dot {
+      width: 14px; height: 14px; min-width: 14px;
+      border-radius: 50%; display: inline-block;
+    }
+  </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#aside-nav" data-bs-offset="120" tabindex="0">
+
+  <!-- ================================================================
+       NAV
+       ================================================================ -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">
+        <i class="fas fa-user-graduate"></i> Corina Acosta
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="sobremi/sobremi.html">Sobre mí</a></li>
+          <li class="nav-item"><a class="nav-link" href="multimedia/multimedia.html">Presentación</a></li>
+          <li class="nav-item"><a class="nav-link" href="horario/horario.html">Horario</a></li>
+          <li class="nav-item"><a class="nav-link" href="contenido/contenido.html">Contenido</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Formularios</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="cto/contacto.html">Contacto</a></li>
+              <li><a class="dropdown-item" href="cto/buzon.html">Buzón</a></li>
+              <li><a class="dropdown-item" href="buscar/buscar.html">Búsqueda</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="proyectos/proyectos.html">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="proyeccion.html">Proyección</a></li>
+          <li class="nav-item"><a class="nav-link" href="login/login.html">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================================================================
+       HEADER (etiqueta semántica)
+       ================================================================ -->
+  <header class="hero-banner">
+    <div class="container text-center text-white">
+      <h1 class="display-4 fw-bold mb-2">
+        <i class="fas fa-rocket me-2"></i>Mi Proyección Personal
+      </h1>
+      <p class="lead mb-1">Hacia dónde quiero llegar: Ingeniera especializada en</p>
+      <p class="lead fw-bold mb-4">Ciberseguridad &amp; Forense Informática</p>
+      <div class="d-flex gap-3 justify-content-center flex-wrap">
+        <button class="btn btn-light btn-lg" data-bs-toggle="modal" data-bs-target="#contactoModal">
+          <i class="fas fa-envelope me-2"></i>Contacto Rápido
+        </button>
+        <a href="sobremi/sobremi.html" class="btn btn-outline-light btn-lg">
+          <i class="fas fa-user me-2"></i>Sobre mí
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================================================================
+       MAIN (etiqueta semántica)
+       ================================================================ -->
+  <main class="container my-5">
+
+    <!-- Alerta informativa -->
+    <div class="alert alert-info d-flex align-items-start gap-3 mb-4" role="alert">
+      <i class="fas fa-info-circle fa-lg mt-1 flex-shrink-0"></i>
+      <div>
+        <strong>¡En formación activa!</strong> Actualmente cursando Ingeniería en Tecnologías de la
+        Información en la ESPE (2026). Esta página documenta mi visión, metas y el plan que seguiré para
+        alcanzar mi proyección profesional en ciberseguridad.
+      </div>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- ================================================================
+           ASIDE: Navegación lateral con Scrollspy + List Group (etiqueta semántica)
+           ================================================================ -->
+      <aside class="col-lg-3 d-none d-lg-block">
+        <div id="aside-nav" class="sticky-top" style="top:82px;">
+
+          <!-- List Group conectado a secciones (COMPONENTE REQUERIDO) -->
+          <div class="card shadow border-0 mb-3">
+            <div class="card-header py-2">
+              <h6 class="mb-0"><i class="fas fa-compass me-2"></i>Navegación</h6>
+            </div>
+            <div class="list-group list-group-flush rounded-bottom" id="nav-list">
+              <a class="list-group-item list-group-item-action aside-link" href="#vision">
+                <i class="fas fa-eye me-2 text-primary"></i>Visión Profesional
+              </a>
+              <a class="list-group-item list-group-item-action aside-link" href="#especialidades">
+                <i class="fas fa-layer-group me-2 text-primary"></i>Especializaciones
+              </a>
+              <a class="list-group-item list-group-item-action aside-link" href="#perfil-destacado">
+                <i class="fas fa-id-badge me-2 text-primary"></i>Perfil Destacado
+              </a>
+              <a class="list-group-item list-group-item-action aside-link" href="#habilidades">
+                <i class="fas fa-chart-bar me-2 text-primary"></i>Habilidades
+              </a>
+              <a class="list-group-item list-group-item-action aside-link" href="#plan">
+                <i class="fas fa-table me-2 text-primary"></i>Plan de Desarrollo
+              </a>
+              <a class="list-group-item list-group-item-action aside-link" href="#metas">
+                <i class="fas fa-certificate me-2 text-primary"></i>Metas
+              </a>
+              <a class="list-group-item list-group-item-action aside-link" href="#proyectos">
+                <i class="fas fa-star me-2 text-primary"></i>Proyectos Soñados
+              </a>
+              <a class="list-group-item list-group-item-action aside-link" href="#timeline">
+                <i class="fas fa-stream me-2 text-primary"></i>Línea de Tiempo
+              </a>
+              <a class="list-group-item list-group-item-action aside-link" href="#areas-interes">
+                <i class="fas fa-th-list me-2 text-primary"></i>Áreas de Interés
+              </a>
+            </div>
+          </div>
+
+          <!-- Mini card de progreso en aside -->
+          <div class="card shadow border-0">
+            <div class="card-body">
+              <h6 class="text-primary mb-3 text-center">
+                <i class="fas fa-tachometer-alt me-2"></i>Mi Progreso
+              </h6>
+              <div class="mb-3">
+                <div class="d-flex justify-content-between mb-1">
+                  <small class="text-muted">Carrera universitaria</small>
+                  <small class="fw-bold">70%</small>
+                </div>
+                <div class="progress" style="height:8px;">
+                  <div class="progress-bar" style="width:70%" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <div class="d-flex justify-content-between mb-1">
+                  <small class="text-muted">Habilidades técnicas</small>
+                  <small class="fw-bold">55%</small>
+                </div>
+                <div class="progress" style="height:8px;">
+                  <div class="progress-bar bg-success" style="width:55%" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div>
+                <div class="d-flex justify-content-between mb-1">
+                  <small class="text-muted">Certificaciones</small>
+                  <small class="fw-bold">10%</small>
+                </div>
+                <div class="progress" style="height:8px;">
+                  <div class="progress-bar bg-warning" style="width:10%" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </aside><!-- /aside -->
+
+      <!-- ================================================================
+           CONTENIDO PRINCIPAL
+           ================================================================ -->
+      <div class="col-12 col-lg-9">
+
+        <!-- ============================================================
+             SECCIÓN 1: VISIÓN PROFESIONAL — Carousel
+             ============================================================ -->
+        <section id="vision" class="mb-5">
+          <h2 class="mb-4"><i class="fas fa-eye me-2"></i>Mi Visión Profesional</h2>
+
+          <div id="visionCarousel" class="carousel slide shadow-lg" data-bs-ride="carousel" data-bs-interval="5000">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#visionCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+              <button type="button" data-bs-target="#visionCarousel" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#visionCarousel" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active carousel-slide-bg-1">
+                <div class="carousel-caption text-dark p-4 p-md-5">
+                  <div class="row justify-content-center">
+                    <div class="col-12 col-md-9 text-center">
+                      <i class="fas fa-shield-alt fa-4x text-primary mb-3"></i>
+                      <h3 class="fw-bold">Especialista en Ciberseguridad</h3>
+                      <p class="lead">Mi objetivo principal es convertirme en una experta reconocida en ciberseguridad, protegiendo organizaciones e infraestructuras críticas del Ecuador y América Latina.</p>
+                      <span class="badge bg-primary fs-6">Meta Principal</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item carousel-slide-bg-2">
+                <div class="carousel-caption text-dark p-4 p-md-5">
+                  <div class="row justify-content-center">
+                    <div class="col-12 col-md-9 text-center">
+                      <i class="fas fa-search fa-4x text-primary mb-3"></i>
+                      <h3 class="fw-bold">Forense Digital e Investigación</h3>
+                      <p class="lead">Desarrollar habilidades avanzadas en análisis forense digital para apoyar en la investigación de delitos informáticos y preservación de evidencia digital.</p>
+                      <span class="badge bg-info text-dark fs-6">Especialización</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item carousel-slide-bg-3">
+                <div class="carousel-caption text-dark p-4 p-md-5">
+                  <div class="row justify-content-center">
+                    <div class="col-12 col-md-9 text-center">
+                      <i class="fas fa-users-cog fa-4x text-primary mb-3"></i>
+                      <h3 class="fw-bold">Liderazgo e Impacto Social</h3>
+                      <p class="lead">Inspirar y mentorizar a la próxima generación de profesionales en TI, especialmente mujeres en tecnología, contribuyendo al desarrollo digital del Ecuador.</p>
+                      <span class="badge bg-success fs-6">Visión Largo Plazo</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#visionCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#visionCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
+        </section>
+
+        <!-- ============================================================
+             SECCIÓN 2: ACORDEÓN QUE CONTIENE CARRUSEL (COMBINACIÓN REQUERIDA)
+             ============================================================ -->
+        <section id="especialidades" class="mb-5">
+          <h2 class="mb-2"><i class="fas fa-layer-group me-2"></i>Mis Áreas de Especialización</h2>
+          <p class="text-muted mb-4">Explora las áreas tecnológicas en las que enfocaré mi crecimiento profesional. Cada sección contiene un carrusel interactivo.</p>
+
+          <div class="accordion shadow-lg" id="especialidadesAccordion">
+
+            <!-- Item 1: Ciberseguridad + Carrusel -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#esp1" aria-expanded="true" aria-controls="esp1">
+                  <i class="fas fa-shield-alt me-2"></i>Ciberseguridad Ofensiva
+                  <span class="badge bg-danger ms-auto me-2">Prioritaria</span>
+                </button>
+              </h2>
+              <div id="esp1" class="accordion-collapse collapse show" data-bs-parent="#especialidadesAccordion">
+                <div class="accordion-body p-0">
+                  <!-- Carrusel DENTRO del acordeón -->
+                  <div id="cyberCarousel" class="carousel slide carousel-inner-accordion" data-bs-ride="false">
+                    <div class="carousel-indicators carousel-indicators-dark">
+                      <button type="button" data-bs-target="#cyberCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                      <button type="button" data-bs-target="#cyberCarousel" data-bs-slide-to="1"></button>
+                      <button type="button" data-bs-target="#cyberCarousel" data-bs-slide-to="2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" style="background:linear-gradient(135deg,#ffe8e8,#ffd0d0);">
+                        <div class="carousel-slide-content text-center py-5 px-3">
+                          <i class="fas fa-bug fa-4x text-danger mb-3"></i>
+                          <h5 class="fw-bold">¿Qué es el Hacking Ético?</h5>
+                          <p class="mb-3 mx-auto" style="max-width:560px;">El hacking ético aplica técnicas de intrusión <em>autorizadas</em> para identificar y corregir vulnerabilidades antes de que actores maliciosos las exploten. Es la primera línea de defensa en ciberseguridad moderna.</p>
+                          <span class="badge bg-danger me-1">Pentesting</span>
+                          <span class="badge bg-secondary me-1">Vulnerabilidades</span>
+                          <span class="badge bg-dark">CTF</span>
+                        </div>
+                      </div>
+                      <div class="carousel-item" style="background:linear-gradient(135deg,#ffe8e8,#ffd0d0);">
+                        <div class="carousel-slide-content text-center py-5 px-3">
+                          <i class="fas fa-tools fa-4x text-danger mb-3"></i>
+                          <h5 class="fw-bold">Herramientas que Quiero Dominar</h5>
+                          <div class="d-flex flex-wrap justify-content-center gap-2 mt-3">
+                            <span class="badge bg-dark fs-6 px-3 py-2"><i class="fas fa-terminal me-1"></i>Kali Linux</span>
+                            <span class="badge bg-danger fs-6 px-3 py-2">Metasploit</span>
+                            <span class="badge bg-secondary fs-6 px-3 py-2">Burp Suite</span>
+                            <span class="badge bg-primary fs-6 px-3 py-2">Wireshark</span>
+                            <span class="badge bg-success fs-6 px-3 py-2">Nmap</span>
+                            <span class="badge bg-warning text-dark fs-6 px-3 py-2">OWASP ZAP</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item" style="background:linear-gradient(135deg,#ffe8e8,#ffd0d0);">
+                        <div class="carousel-slide-content text-center py-5 px-3">
+                          <i class="fas fa-award fa-4x text-danger mb-3"></i>
+                          <h5 class="fw-bold">Certificaciones Objetivo</h5>
+                          <div class="row justify-content-center g-3 mt-1 mx-0">
+                            <div class="col-12 col-sm-4">
+                              <div class="card border-0 shadow-sm p-3 text-center">
+                                <strong class="text-primary">Security+</strong><br>
+                                <small class="text-muted">CompTIA — 2026</small>
+                              </div>
+                            </div>
+                            <div class="col-12 col-sm-4">
+                              <div class="card border-0 shadow-sm p-3 text-center">
+                                <strong class="text-danger">CEH</strong><br>
+                                <small class="text-muted">EC-Council — 2027</small>
+                              </div>
+                            </div>
+                            <div class="col-12 col-sm-4">
+                              <div class="card border-0 shadow-sm p-3 text-center">
+                                <strong class="text-dark">OSCP</strong><br>
+                                <small class="text-muted">Offensive Sec — 2028</small>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev carousel-btn-dark" type="button" data-bs-target="#cyberCarousel" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next carousel-btn-dark" type="button" data-bs-target="#cyberCarousel" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Siguiente</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div><!-- /item 1 -->
+
+            <!-- Item 2: Forense Digital + Carrusel -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#esp2" aria-expanded="false" aria-controls="esp2">
+                  <i class="fas fa-search me-2"></i>Forense Digital
+                  <span class="badge bg-primary ms-auto me-2">Especialización</span>
+                </button>
+              </h2>
+              <div id="esp2" class="accordion-collapse collapse" data-bs-parent="#especialidadesAccordion">
+                <div class="accordion-body p-0">
+                  <div id="forenseCarousel" class="carousel slide carousel-inner-accordion" data-bs-ride="false">
+                    <div class="carousel-indicators carousel-indicators-dark">
+                      <button type="button" data-bs-target="#forenseCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                      <button type="button" data-bs-target="#forenseCarousel" data-bs-slide-to="1"></button>
+                      <button type="button" data-bs-target="#forenseCarousel" data-bs-slide-to="2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" style="background:linear-gradient(135deg,#e3f2fd,#bbdefb);">
+                        <div class="carousel-slide-content text-center py-5 px-3">
+                          <i class="fas fa-microscope fa-4x text-primary mb-3"></i>
+                          <h5 class="fw-bold">¿Qué es el Forense Digital?</h5>
+                          <p class="mb-3 mx-auto" style="max-width:560px;">La informática forense aplica métodos científicos para recopilar, analizar y preservar evidencia digital. Es fundamental en la investigación de delitos cibernéticos y en procedimientos legales.</p>
+                          <span class="badge bg-primary me-1">Evidencia Digital</span>
+                          <span class="badge bg-info text-dark me-1">Cadena de Custodia</span>
+                          <span class="badge bg-secondary">Peritaje</span>
+                        </div>
+                      </div>
+                      <div class="carousel-item" style="background:linear-gradient(135deg,#e3f2fd,#bbdefb);">
+                        <div class="carousel-slide-content text-center py-5 px-3">
+                          <i class="fas fa-laptop-code fa-4x text-primary mb-3"></i>
+                          <h5 class="fw-bold">Herramientas Forenses</h5>
+                          <div class="d-flex flex-wrap justify-content-center gap-2 mt-3">
+                            <span class="badge bg-primary fs-6 px-3 py-2">Autopsy</span>
+                            <span class="badge bg-info text-dark fs-6 px-3 py-2">Volatility</span>
+                            <span class="badge bg-success fs-6 px-3 py-2">FTK Imager</span>
+                            <span class="badge bg-dark fs-6 px-3 py-2">Cellebrite</span>
+                            <span class="badge bg-secondary fs-6 px-3 py-2">EnCase</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item" style="background:linear-gradient(135deg,#e3f2fd,#bbdefb);">
+                        <div class="carousel-slide-content text-center py-5 px-3">
+                          <i class="fas fa-gavel fa-4x text-primary mb-3"></i>
+                          <h5 class="fw-bold">Áreas de Aplicación</h5>
+                          <div class="row justify-content-center g-3 mt-1 mx-0">
+                            <div class="col-12 col-sm-4">
+                              <div class="card border-0 shadow-sm p-3 text-center">
+                                <i class="fas fa-mobile-alt text-primary fa-lg mb-1"></i>
+                                <small class="fw-bold d-block">Forense Móvil</small>
+                              </div>
+                            </div>
+                            <div class="col-12 col-sm-4">
+                              <div class="card border-0 shadow-sm p-3 text-center">
+                                <i class="fas fa-cloud text-info fa-lg mb-1"></i>
+                                <small class="fw-bold d-block">Cloud Forensics</small>
+                              </div>
+                            </div>
+                            <div class="col-12 col-sm-4">
+                              <div class="card border-0 shadow-sm p-3 text-center">
+                                <i class="fas fa-network-wired text-success fa-lg mb-1"></i>
+                                <small class="fw-bold d-block">Network Forensics</small>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev carousel-btn-dark" type="button" data-bs-target="#forenseCarousel" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next carousel-btn-dark" type="button" data-bs-target="#forenseCarousel" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Siguiente</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div><!-- /item 2 -->
+
+            <!-- Item 3: Cloud & Redes + Carrusel -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#esp3" aria-expanded="false" aria-controls="esp3">
+                  <i class="fas fa-cloud me-2"></i>Cloud &amp; Redes
+                  <span class="badge bg-info text-dark ms-auto me-2">Complementaria</span>
+                </button>
+              </h2>
+              <div id="esp3" class="accordion-collapse collapse" data-bs-parent="#especialidadesAccordion">
+                <div class="accordion-body p-0">
+                  <div id="cloudCarousel" class="carousel slide carousel-inner-accordion" data-bs-ride="false">
+                    <div class="carousel-indicators carousel-indicators-dark">
+                      <button type="button" data-bs-target="#cloudCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                      <button type="button" data-bs-target="#cloudCarousel" data-bs-slide-to="1"></button>
+                      <button type="button" data-bs-target="#cloudCarousel" data-bs-slide-to="2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" style="background:linear-gradient(135deg,#e8f5e9,#c8e6c9);">
+                        <div class="carousel-slide-content text-center py-5 px-3">
+                          <i class="fas fa-server fa-4x text-success mb-3"></i>
+                          <h5 class="fw-bold">Cloud Computing &amp; Seguridad</h5>
+                          <p class="mb-3 mx-auto" style="max-width:560px;">El cloud computing es la base de la infraestructura moderna. Asegurar entornos cloud es una habilidad crítica para cualquier especialista en ciberseguridad actual.</p>
+                          <span class="badge bg-warning text-dark me-1">AWS</span>
+                          <span class="badge bg-primary me-1">Azure</span>
+                          <span class="badge bg-danger me-1">GCP</span>
+                        </div>
+                      </div>
+                      <div class="carousel-item" style="background:linear-gradient(135deg,#e8f5e9,#c8e6c9);">
+                        <div class="carousel-slide-content text-center py-5 px-3">
+                          <i class="fas fa-network-wired fa-4x text-success mb-3"></i>
+                          <h5 class="fw-bold">Infraestructura de Redes</h5>
+                          <div class="d-flex flex-wrap justify-content-center gap-2 mt-3">
+                            <span class="badge bg-success fs-6 px-3 py-2">Cisco CCNA</span>
+                            <span class="badge bg-primary fs-6 px-3 py-2">Firewalls</span>
+                            <span class="badge bg-warning text-dark fs-6 px-3 py-2">VPNs</span>
+                            <span class="badge bg-info text-dark fs-6 px-3 py-2">IDS / IPS</span>
+                            <span class="badge bg-dark fs-6 px-3 py-2">SDN</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item" style="background:linear-gradient(135deg,#e8f5e9,#c8e6c9);">
+                        <div class="carousel-slide-content text-center py-5 px-3">
+                          <i class="fas fa-certificate fa-4x text-success mb-3"></i>
+                          <h5 class="fw-bold">Certificaciones Cloud &amp; Redes</h5>
+                          <div class="row justify-content-center g-3 mt-1 mx-0">
+                            <div class="col-12 col-sm-4">
+                              <div class="card border-0 shadow-sm p-3 text-center">
+                                <strong class="text-warning">AWS SAA</strong><br>
+                                <small class="text-muted">2028</small>
+                              </div>
+                            </div>
+                            <div class="col-12 col-sm-4">
+                              <div class="card border-0 shadow-sm p-3 text-center">
+                                <strong class="text-primary">AZ-900</strong><br>
+                                <small class="text-muted">2027</small>
+                              </div>
+                            </div>
+                            <div class="col-12 col-sm-4">
+                              <div class="card border-0 shadow-sm p-3 text-center">
+                                <strong class="text-success">CCNA</strong><br>
+                                <small class="text-muted">2027</small>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev carousel-btn-dark" type="button" data-bs-target="#cloudCarousel" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next carousel-btn-dark" type="button" data-bs-target="#cloudCarousel" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Siguiente</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div><!-- /item 3 -->
+
+          </div><!-- /accordion especialidades -->
+        </section>
+
+        <!-- ============================================================
+             SECCIÓN 3: TARJETA CON IMAGEN + BADGES + BOTONES (REQUERIDA)
+             ============================================================ -->
+        <section id="perfil-destacado" class="mb-5">
+          <h2 class="mb-4"><i class="fas fa-id-badge me-2"></i>Mi Perfil Profesional Futuro</h2>
+          <div class="row align-items-stretch g-4">
+
+            <!-- figure (etiqueta semántica) -->
+            <div class="col-12 col-md-5">
+              <figure class="mb-0 h-100">
+                <img src="../multimedia/img/mifoto.jpg"
+                  alt="Corina Alejandra Acosta Oliva — Futura Ingeniera en Ciberseguridad"
+                  class="img-fluid rounded shadow-lg w-100"
+                  style="height:100%; min-height:280px; object-fit:cover; object-position:top;">
+                <figcaption class="text-center text-muted mt-2 small">
+                  <i class="fas fa-camera me-1"></i>Corina Alejandra Acosta Oliva · ESPE 2026
+                </figcaption>
+              </figure>
+            </div>
+
+            <!-- Tarjeta con image context + badges + botones -->
+            <div class="col-12 col-md-7">
+              <div class="card shadow-lg border-0 h-100">
+                <div class="card-header">
+                  <h5 class="mb-0"><i class="fas fa-user-shield me-2"></i>Ingeniera en Ciberseguridad</h5>
+                </div>
+                <div class="card-body p-4 d-flex flex-column">
+                  <article>
+                    <h5 class="card-title mb-1">Corina Alejandra Acosta Oliva</h5>
+                    <p class="text-muted small mb-3">
+                      <i class="fas fa-map-marker-alt me-1"></i>Ecuador ·
+                      <i class="fas fa-university me-1 ms-1"></i>ESPE · Ing. Tecnologías de la Información
+                    </p>
+                    <p class="mb-3">
+                      Mi objetivo es convertirme en una <strong>Ingeniera Senior en Ciberseguridad</strong>,
+                      especializada en hacking ético y análisis forense digital. Aspiro a proteger organizaciones
+                      y contribuir al ecosistema de seguridad digital latinoamericano.
+                    </p>
+                    <p class="mb-3">
+                      <i class="fas fa-route me-2 text-primary"></i>
+                      <strong>Ruta:</strong> Security Analyst → Penetration Tester → Senior Security Engineer
+                    </p>
+                    <!-- Badges requeridos en la tarjeta -->
+                    <div class="mb-4">
+                      <span class="badge bg-danger me-1 mb-1">Ciberseguridad</span>
+                      <span class="badge bg-primary me-1 mb-1">Forense Digital</span>
+                      <span class="badge bg-success me-1 mb-1">Redes</span>
+                      <span class="badge bg-warning text-dark me-1 mb-1">Python</span>
+                      <span class="badge bg-info text-dark me-1 mb-1">Cloud Security</span>
+                      <span class="badge bg-dark me-1 mb-1">Ethical Hacking</span>
+                      <span class="badge bg-secondary me-1 mb-1">ESPE</span>
+                    </div>
+                    <!-- Botones requeridos en la tarjeta -->
+                    <div class="d-flex gap-2 flex-wrap mt-auto">
+                      <a href="https://www.linkedin.com/in/corina-alejandra-acosta-oliva-1555ba28a"
+                        target="_blank" class="btn btn-primary">
+                        <i class="fab fa-linkedin me-2"></i>LinkedIn
+                      </a>
+                      <a href="https://github.com/Corina-ac" target="_blank" class="btn btn-outline-primary">
+                        <i class="fab fa-github me-2"></i>GitHub
+                      </a>
+                      <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#contactoModal">
+                        <i class="fas fa-envelope me-2"></i>Contactar
+                      </button>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- ============================================================
+             SECCIÓN 4: HABILIDADES — PROGRESS BARS
+             ============================================================ -->
+        <section id="habilidades" class="mb-5">
+          <h2 class="mb-4"><i class="fas fa-chart-bar me-2"></i>Habilidades</h2>
+          <div class="row g-4">
+
+            <div class="col-12 col-md-6">
+              <div class="card shadow-lg border-0 h-100">
+                <div class="card-header">
+                  <h5 class="mb-0"><i class="fas fa-laptop-code me-2"></i>Habilidades Actuales</h5>
+                </div>
+                <div class="card-body p-4">
+                  <article>
+                    <div class="mb-3">
+                      <div class="skill-label d-flex justify-content-between">
+                        <span><i class="fab fa-html5 me-1 text-danger"></i>HTML5 &amp; CSS3</span><span>85%</span>
+                      </div>
+                      <div class="progress" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width:85%">85%</div>
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                      <div class="skill-label d-flex justify-content-between">
+                        <span><i class="fab fa-bootstrap me-1 text-primary"></i>Bootstrap 5</span><span>78%</span>
+                      </div>
+                      <div class="progress" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar bg-primary" style="width:78%">78%</div>
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                      <div class="skill-label d-flex justify-content-between">
+                        <span><i class="fab fa-js-square me-1 text-warning"></i>JavaScript</span><span>65%</span>
+                      </div>
+                      <div class="progress" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar bg-warning text-dark" style="width:65%">65%</div>
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                      <div class="skill-label d-flex justify-content-between">
+                        <span><i class="fas fa-database me-1 text-info"></i>SQL / BD</span><span>70%</span>
+                      </div>
+                      <div class="progress" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar bg-info text-dark" style="width:70%">70%</div>
+                      </div>
+                    </div>
+                    <div class="mb-0">
+                      <div class="skill-label d-flex justify-content-between">
+                        <span><i class="fas fa-network-wired me-1 text-secondary"></i>Redes &amp; Protocolos</span><span>60%</span>
+                      </div>
+                      <div class="progress" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar bg-secondary" style="width:60%">60%</div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <div class="card shadow-lg border-0 h-100">
+                <div class="card-header">
+                  <h5 class="mb-0"><i class="fas fa-shield-alt me-2"></i>Habilidades en Desarrollo</h5>
+                </div>
+                <div class="card-body p-4">
+                  <article>
+                    <div class="mb-3">
+                      <div class="skill-label d-flex justify-content-between">
+                        <span><i class="fas fa-bug me-1 text-danger"></i>Pentesting / Hacking Ético</span><span class="text-muted small">meta: 90%</span>
+                      </div>
+                      <div class="progress" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar bg-danger" style="width:30%">30%</div>
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                      <div class="skill-label d-flex justify-content-between">
+                        <span><i class="fas fa-search me-1 text-primary"></i>Forense Digital</span><span class="text-muted small">meta: 90%</span>
+                      </div>
+                      <div class="progress" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width:25%">25%</div>
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                      <div class="skill-label d-flex justify-content-between">
+                        <span><i class="fas fa-lock me-1 text-success"></i>Criptografía</span><span class="text-muted small">meta: 80%</span>
+                      </div>
+                      <div class="progress" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar bg-success" style="width:20%">20%</div>
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                      <div class="skill-label d-flex justify-content-between">
+                        <span><i class="fas fa-code me-1 text-warning"></i>Python para Seguridad</span><span class="text-muted small">meta: 85%</span>
+                      </div>
+                      <div class="progress" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar bg-warning text-dark" style="width:35%">35%</div>
+                      </div>
+                    </div>
+                    <div class="mb-0">
+                      <div class="skill-label d-flex justify-content-between">
+                        <span><i class="fas fa-cloud me-1 text-info"></i>Cloud Security</span><span class="text-muted small">meta: 75%</span>
+                      </div>
+                      <div class="progress" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar bg-info text-dark" style="width:15%">15%</div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- ============================================================
+             SECCIÓN 5: TABLA CON PROGRESS BARS (COMBINACIÓN REQUERIDA)
+             ============================================================ -->
+        <section id="plan" class="mb-5">
+          <h2 class="mb-4"><i class="fas fa-table me-2"></i>Plan de Desarrollo de Habilidades</h2>
+          <div class="card shadow-lg border-0">
+            <div class="card-header">
+              <h5 class="mb-0"><i class="fas fa-tasks me-2"></i>Hoja de Ruta Técnica — 2026–2031</h5>
+            </div>
+            <div class="card-body p-0">
+              <div class="table-responsive">
+                <table class="table table-striped table-hover mb-0">
+                  <thead>
+                    <tr>
+                      <th scope="col"><i class="fas fa-code me-1"></i>Habilidad</th>
+                      <th scope="col">Categoría</th>
+                      <th scope="col">Nivel Actual</th>
+                      <th scope="col">Meta</th>
+                      <th scope="col" style="min-width:180px;">Progreso</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="text-start fw-semibold"><i class="fab fa-html5 text-danger me-2"></i>HTML5 / CSS3</td>
+                      <td><span class="badge bg-info text-dark">Frontend</span></td>
+                      <td>Avanzado</td>
+                      <td>Experto</td>
+                      <td>
+                        <div class="progress" style="height:20px;" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                          <div class="progress-bar" style="width:85%;">85%</div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-start fw-semibold"><i class="fab fa-bootstrap text-primary me-2"></i>Bootstrap 5</td>
+                      <td><span class="badge bg-primary">Frontend</span></td>
+                      <td>Intermedio</td>
+                      <td>Experto</td>
+                      <td>
+                        <div class="progress" style="height:20px;" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100">
+                          <div class="progress-bar bg-primary" style="width:78%;">78%</div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-start fw-semibold"><i class="fab fa-python text-warning me-2"></i>Python</td>
+                      <td><span class="badge bg-warning text-dark">Backend/Sec</span></td>
+                      <td>Básico</td>
+                      <td>Avanzado</td>
+                      <td>
+                        <div class="progress" style="height:20px;" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                          <div class="progress-bar bg-warning text-dark" style="width:40%;">40%</div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-start fw-semibold"><i class="fas fa-bug text-danger me-2"></i>Pentesting</td>
+                      <td><span class="badge bg-danger">Seguridad</span></td>
+                      <td>Básico</td>
+                      <td>Avanzado</td>
+                      <td>
+                        <div class="progress" style="height:20px;" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                          <div class="progress-bar bg-danger" style="width:30%;">30%</div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-start fw-semibold"><i class="fas fa-search text-primary me-2"></i>Forense Digital</td>
+                      <td><span class="badge bg-primary">Seguridad</span></td>
+                      <td>Básico</td>
+                      <td>Experto</td>
+                      <td>
+                        <div class="progress" style="height:20px;" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                          <div class="progress-bar" style="width:25%;">25%</div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-start fw-semibold"><i class="fas fa-database text-info me-2"></i>SQL / BD</td>
+                      <td><span class="badge bg-info text-dark">Backend</span></td>
+                      <td>Intermedio</td>
+                      <td>Avanzado</td>
+                      <td>
+                        <div class="progress" style="height:20px;" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                          <div class="progress-bar bg-info text-dark" style="width:70%;">70%</div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-start fw-semibold"><i class="fas fa-network-wired text-success me-2"></i>Redes</td>
+                      <td><span class="badge bg-success">Infraestructura</span></td>
+                      <td>Intermedio</td>
+                      <td>Avanzado</td>
+                      <td>
+                        <div class="progress" style="height:20px;" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                          <div class="progress-bar bg-success" style="width:60%;">60%</div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-start fw-semibold"><i class="fas fa-cloud text-secondary me-2"></i>Cloud Security</td>
+                      <td><span class="badge bg-secondary">Cloud</span></td>
+                      <td>Principiante</td>
+                      <td>Intermedio</td>
+                      <td>
+                        <div class="progress" style="height:20px;" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
+                          <div class="progress-bar bg-secondary" style="width:15%;">15%</div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============================================================
+             SECCIÓN 6: METAS Y CERTIFICACIONES — Acordeón + Cards
+             ============================================================ -->
+        <section id="metas" class="mb-5">
+          <h2 class="mb-4"><i class="fas fa-certificate me-2"></i>Metas y Certificaciones</h2>
+
+          <div class="accordion shadow-lg" id="metasAccordion">
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#meta1" aria-expanded="true">
+                  <i class="fas fa-graduation-cap me-2"></i>Corto Plazo (2026)
+                  <span class="badge bg-success ms-auto me-2">En progreso</span>
+                </button>
+              </h2>
+              <div id="meta1" class="accordion-collapse collapse show" data-bs-parent="#metasAccordion">
+                <div class="accordion-body">
+                  <div class="row g-3">
+                    <div class="col-12 col-md-4">
+                      <article class="card border-0 shadow-sm text-center p-3 h-100">
+                        <i class="fas fa-award fa-2x text-primary mb-2"></i>
+                        <h6>CompTIA Security+</h6>
+                        <span class="badge bg-warning text-dark">Q3 2026</span>
+                        <p class="small text-muted mt-2 mb-0">Certificación base en ciberseguridad, reconocida mundialmente.</p>
+                      </article>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <article class="card border-0 shadow-sm text-center p-3 h-100">
+                        <i class="fab fa-github fa-2x text-dark mb-2"></i>
+                        <h6>Portafolio GitHub</h6>
+                        <span class="badge bg-success">En construcción</span>
+                        <p class="small text-muted mt-2 mb-0">Repositorio público con todos mis proyectos universitarios.</p>
+                      </article>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <article class="card border-0 shadow-sm text-center p-3 h-100">
+                        <i class="fas fa-graduation-cap fa-2x text-success mb-2"></i>
+                        <h6>Titulación ESPE</h6>
+                        <span class="badge bg-primary">Meta 2026</span>
+                        <p class="small text-muted mt-2 mb-0">Obtener el título de Ingeniera en TI con distinción.</p>
+                      </article>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#meta2">
+                  <i class="fas fa-briefcase me-2"></i>Mediano Plazo (2027 – 2028)
+                  <span class="badge bg-warning text-dark ms-auto me-2">Planificado</span>
+                </button>
+              </h2>
+              <div id="meta2" class="accordion-collapse collapse" data-bs-parent="#metasAccordion">
+                <div class="accordion-body">
+                  <div class="row g-3">
+                    <div class="col-12 col-md-4">
+                      <article class="card border-0 shadow-sm text-center p-3 h-100">
+                        <i class="fas fa-user-secret fa-2x text-danger mb-2"></i>
+                        <h6>CEH — Ethical Hacker</h6>
+                        <span class="badge bg-warning text-dark">2027</span>
+                        <p class="small text-muted mt-2 mb-0">Certificación internacional en hacking ético por EC-Council.</p>
+                      </article>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <article class="card border-0 shadow-sm text-center p-3 h-100">
+                        <i class="fas fa-terminal fa-2x text-dark mb-2"></i>
+                        <h6>OSCP — Offensive Security</h6>
+                        <span class="badge bg-warning text-dark">2028</span>
+                        <p class="small text-muted mt-2 mb-0">Certificación hands-on de penetration testing avanzado.</p>
+                      </article>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <article class="card border-0 shadow-sm text-center p-3 h-100">
+                        <i class="fas fa-building fa-2x text-primary mb-2"></i>
+                        <h6>Empleo en Ciberseguridad</h6>
+                        <span class="badge bg-primary">Meta principal</span>
+                        <p class="small text-muted mt-2 mb-0">Posición junior/mid en empresa de seguridad informática.</p>
+                      </article>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#meta3">
+                  <i class="fas fa-rocket me-2"></i>Largo Plazo (2029 – 2031)
+                  <span class="badge bg-primary ms-auto me-2">Visión</span>
+                </button>
+              </h2>
+              <div id="meta3" class="accordion-collapse collapse" data-bs-parent="#metasAccordion">
+                <div class="accordion-body">
+                  <div class="row g-3">
+                    <div class="col-12 col-md-4">
+                      <article class="card border-0 shadow-sm text-center p-3 h-100">
+                        <i class="fas fa-crown fa-2x text-warning mb-2"></i>
+                        <h6>CISSP Certification</h6>
+                        <span class="badge bg-primary">2030</span>
+                        <p class="small text-muted mt-2 mb-0">La certificación más prestigiosa en seguridad informática (ISC)².</p>
+                      </article>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <article class="card border-0 shadow-sm text-center p-3 h-100">
+                        <i class="fas fa-chalkboard-teacher fa-2x text-success mb-2"></i>
+                        <h6>Investigadora / Mentora</h6>
+                        <span class="badge bg-success">2030+</span>
+                        <p class="small text-muted mt-2 mb-0">Publicar investigaciones y mentorizar profesionales en TI.</p>
+                      </article>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <article class="card border-0 shadow-sm text-center p-3 h-100">
+                        <i class="fas fa-globe-americas fa-2x text-info mb-2"></i>
+                        <h6>Impacto Regional</h6>
+                        <span class="badge bg-info text-dark">2031</span>
+                        <p class="small text-muted mt-2 mb-0">Contribuir a la ciberseguridad nacional e identidad digital en Ecuador.</p>
+                      </article>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- ============================================================
+             SECCIÓN 7: PROYECTOS SOÑADOS — Grid de Cards responsivas
+             ============================================================ -->
+        <section id="proyectos" class="mb-5">
+          <h2 class="mb-4"><i class="fas fa-star me-2"></i>Proyectos Soñados</h2>
+          <div class="row g-4">
+
+            <div class="col-12 col-md-6 col-lg-3">
+              <article class="card shadow-lg border-0 h-100 text-center">
+                <div class="card-body p-4 d-flex flex-column">
+                  <i class="fas fa-shield-virus fa-3x text-primary mb-3"></i>
+                  <h5 class="card-title">SOC Académico ESPE</h5>
+                  <p class="card-text text-muted small flex-grow-1">Crear un Security Operations Center estudiantil para monitorear amenazas en tiempo real.</p>
+                  <div class="mt-2">
+                    <span class="badge bg-primary">Ciberseguridad</span>
+                    <span class="badge bg-secondary">ESPE</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+              <article class="card shadow-lg border-0 h-100 text-center">
+                <div class="card-body p-4 d-flex flex-column">
+                  <i class="fas fa-book-medical fa-3x text-danger mb-3"></i>
+                  <h5 class="card-title">Guía de Forense Digital</h5>
+                  <p class="card-text text-muted small flex-grow-1">Publicar una guía en español sobre análisis forense digital para estudiantes latinoamericanos.</p>
+                  <div class="mt-2">
+                    <span class="badge bg-danger">Forense</span>
+                    <span class="badge bg-info text-dark">Publicación</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+              <article class="card shadow-lg border-0 h-100 text-center">
+                <div class="card-body p-4 d-flex flex-column">
+                  <i class="fas fa-female fa-3x text-success mb-3"></i>
+                  <h5 class="card-title">Mujeres en Ciberseguridad</h5>
+                  <p class="card-text text-muted small flex-grow-1">Impulsar una comunidad que apoye a mujeres que desean ingresar al campo de la seguridad informática.</p>
+                  <div class="mt-2">
+                    <span class="badge bg-success">Comunidad</span>
+                    <span class="badge bg-warning text-dark">Diversidad</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+              <article class="card shadow-lg border-0 h-100 text-center">
+                <div class="card-body p-4 d-flex flex-column">
+                  <i class="fas fa-flag fa-3x text-warning mb-3"></i>
+                  <h5 class="card-title">CTF Competition Team</h5>
+                  <p class="card-text text-muted small flex-grow-1">Formar y liderar un equipo universitario para competir en Capture The Flag a nivel internacional.</p>
+                  <div class="mt-2">
+                    <span class="badge bg-warning text-dark">CTF</span>
+                    <span class="badge bg-dark">Competencia</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- ============================================================
+             SECCIÓN 8: LÍNEA DE TIEMPO — List Group
+             ============================================================ -->
+        <section id="timeline" class="mb-5">
+          <h2 class="mb-4"><i class="fas fa-stream me-2"></i>Línea de Tiempo de Aprendizaje</h2>
+          <div class="card shadow-lg border-0">
+            <div class="card-header">
+              <h5 class="mb-0"><i class="fas fa-map-signs me-2"></i>Ruta hacia la Especialización</h5>
+            </div>
+            <div class="card-body p-4">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex align-items-start gap-3 px-0">
+                  <span class="timeline-dot bg-primary flex-shrink-0 mt-1"></span>
+                  <article>
+                    <div class="d-flex align-items-center gap-2 mb-1">
+                      <strong>2024 – 2025</strong>
+                      <span class="badge bg-success">Completado</span>
+                    </div>
+                    <p class="mb-0 text-muted">Fundamentos de programación, HTML5 semántico, CSS3 personalizado, bases de datos y redes de comunicación en ESPE.</p>
+                  </article>
+                </li>
+                <li class="list-group-item d-flex align-items-start gap-3 px-0">
+                  <span class="timeline-dot bg-primary flex-shrink-0 mt-1"></span>
+                  <article>
+                    <div class="d-flex align-items-center gap-2 mb-1">
+                      <strong>2026</strong>
+                      <span class="badge bg-primary">En curso</span>
+                    </div>
+                    <p class="mb-0 text-muted">Bootstrap 5, JavaScript avanzado, interfaces multimedia. Titulación ESPE. CompTIA Security+.</p>
+                  </article>
+                </li>
+                <li class="list-group-item d-flex align-items-start gap-3 px-0">
+                  <span class="timeline-dot bg-secondary flex-shrink-0 mt-1"></span>
+                  <article>
+                    <div class="d-flex align-items-center gap-2 mb-1">
+                      <strong>2027</strong>
+                      <span class="badge bg-warning text-dark">Planificado</span>
+                    </div>
+                    <p class="mb-0 text-muted">Primer empleo en ciberseguridad. Estudios de Ethical Hacking. Certificación CEH. AZ-900 / CCNA.</p>
+                  </article>
+                </li>
+                <li class="list-group-item d-flex align-items-start gap-3 px-0">
+                  <span class="timeline-dot bg-secondary flex-shrink-0 mt-1"></span>
+                  <article>
+                    <div class="d-flex align-items-center gap-2 mb-1">
+                      <strong>2028</strong>
+                      <span class="badge bg-warning text-dark">Planificado</span>
+                    </div>
+                    <p class="mb-0 text-muted">Especialización en Forense Digital. OSCP. Posición mid-level en empresa de seguridad. AWS SAA.</p>
+                  </article>
+                </li>
+                <li class="list-group-item d-flex align-items-start gap-3 px-0">
+                  <span class="timeline-dot bg-secondary flex-shrink-0 mt-1"></span>
+                  <article>
+                    <div class="d-flex align-items-center gap-2 mb-1">
+                      <strong>2029 – 2031</strong>
+                      <span class="badge bg-primary">Visión</span>
+                    </div>
+                    <p class="mb-0 text-muted">CISSP. Posición senior en ciberseguridad. Investigadora. Mentora de nuevas generaciones en TI.</p>
+                  </article>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============================================================
+             SECCIÓN 9: LIST GROUP CONECTADO A SECCIONES INFORMATIVAS (REQUERIDA)
+             ============================================================ -->
+        <section id="areas-interes" class="mb-5">
+          <h2 class="mb-2"><i class="fas fa-th-list me-2"></i>Áreas de Interés Tecnológico</h2>
+          <p class="text-muted mb-4">Selecciona un área para ver la información detallada:</p>
+
+          <div class="row g-3">
+            <!-- List Group de navegación -->
+            <div class="col-12 col-md-4">
+              <div class="list-group" id="interest-list-tab" role="tablist">
+                <a class="list-group-item list-group-item-action active d-flex align-items-center gap-2"
+                   data-bs-toggle="list" href="#int-cyber" role="tab" aria-selected="true">
+                  <i class="fas fa-shield-alt text-danger"></i>
+                  <span>Ciberseguridad</span>
+                  <span class="badge bg-danger ms-auto">1°</span>
+                </a>
+                <a class="list-group-item list-group-item-action d-flex align-items-center gap-2"
+                   data-bs-toggle="list" href="#int-forense" role="tab" aria-selected="false">
+                  <i class="fas fa-search text-primary"></i>
+                  <span>Forense Digital</span>
+                  <span class="badge bg-primary ms-auto">2°</span>
+                </a>
+                <a class="list-group-item list-group-item-action d-flex align-items-center gap-2"
+                   data-bs-toggle="list" href="#int-dev" role="tab" aria-selected="false">
+                  <i class="fas fa-code text-success"></i>
+                  <span>Desarrollo Web</span>
+                  <span class="badge bg-success ms-auto">3°</span>
+                </a>
+                <a class="list-group-item list-group-item-action d-flex align-items-center gap-2"
+                   data-bs-toggle="list" href="#int-cloud" role="tab" aria-selected="false">
+                  <i class="fas fa-cloud text-info"></i>
+                  <span>Cloud &amp; DevOps</span>
+                  <span class="badge bg-info text-dark ms-auto">4°</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Secciones informativas conectadas -->
+            <div class="col-12 col-md-8">
+              <div class="tab-content" id="interest-tab-content">
+
+                <div class="tab-pane fade show active" id="int-cyber" role="tabpanel">
+                  <article class="card shadow border-0 h-100">
+                    <div class="card-body p-4">
+                      <h5 class="card-title"><i class="fas fa-shield-alt text-danger me-2"></i>Ciberseguridad</h5>
+                      <p>La ciberseguridad es mi principal vocación. Me apasiona entender cómo funcionan los sistemas para descubrir sus vulnerabilidades y protegerlos de manera efectiva.</p>
+                      <ul class="list-unstyled mb-3">
+                        <li class="mb-1"><i class="fas fa-check-circle text-success me-2"></i>Ethical Hacking &amp; Pentesting</li>
+                        <li class="mb-1"><i class="fas fa-check-circle text-success me-2"></i>Análisis de vulnerabilidades (OWASP)</li>
+                        <li class="mb-1"><i class="fas fa-check-circle text-success me-2"></i>Hardening de sistemas y redes</li>
+                        <li class="mb-1"><i class="fas fa-check-circle text-success me-2"></i>Incident Response &amp; SOC</li>
+                      </ul>
+                      <span class="badge bg-danger me-1">CEH</span>
+                      <span class="badge bg-dark me-1">OSCP</span>
+                      <span class="badge bg-secondary">CISSP</span>
+                    </div>
+                  </article>
+                </div>
+
+                <div class="tab-pane fade" id="int-forense" role="tabpanel">
+                  <article class="card shadow border-0 h-100">
+                    <div class="card-body p-4">
+                      <h5 class="card-title"><i class="fas fa-search text-primary me-2"></i>Forense Digital</h5>
+                      <p>La investigación forense digital combina tecnología, análisis crítico y procedimientos legales para resolver delitos informáticos y apoyar procesos judiciales.</p>
+                      <ul class="list-unstyled mb-3">
+                        <li class="mb-1"><i class="fas fa-check-circle text-success me-2"></i>Adquisición y preservación de evidencia digital</li>
+                        <li class="mb-1"><i class="fas fa-check-circle text-success me-2"></i>Análisis de memoria RAM y almacenamiento</li>
+                        <li class="mb-1"><i class="fas fa-check-circle text-success me-2"></i>Forense en dispositivos móviles y cloud</li>
+                        <li class="mb-1"><i class="fas fa-check-circle text-success me-2"></i>Peritaje informático e informes técnicos</li>
+                      </ul>
+                      <span class="badge bg-primary me-1">Autopsy</span>
+                      <span class="badge bg-info text-dark me-1">Volatility</span>
+                      <span class="badge bg-secondary">FTK Imager</span>
+                    </div>
+                  </article>
+                </div>
+
+                <div class="tab-pane fade" id="int-dev" role="tabpanel">
+                  <article class="card shadow border-0 h-100">
+                    <div class="card-body p-4">
+                      <h5 class="card-title"><i class="fas fa-code text-success me-2"></i>Desarrollo Web</h5>
+                      <p>El desarrollo web es mi base técnica. Construyo interfaces responsivas, accesibles y seguras usando tecnologías modernas siguiendo el enfoque Mobile First.</p>
+                      <ul class="list-unstyled mb-3">
+                        <li class="mb-1"><i class="fas fa-check-circle text-success me-2"></i>HTML5 semántico y CSS3 avanzado</li>
+                        <li class="mb-1"><i class="fas fa-check-circle text-success me-2"></i>Bootstrap 5 — diseño Mobile First</li>
+                        <li class="mb-1"><i class="fas fa-check-circle text-success me-2"></i>JavaScript y frameworks modernos</li>
+                        <li class="mb-1"><i class="fas fa-check-circle text-success me-2"></i>Seguridad web — OWASP Top 10</li>
+                      </ul>
+                      <span class="badge bg-danger me-1">HTML5</span>
+                      <span class="badge bg-primary me-1">Bootstrap 5</span>
+                      <span class="badge bg-warning text-dark">JavaScript</span>
+                    </div>
+                  </article>
+                </div>
+
+                <div class="tab-pane fade" id="int-cloud" role="tabpanel">
+                  <article class="card shadow border-0 h-100">
+                    <div class="card-body p-4">
+                      <h5 class="card-title"><i class="fas fa-cloud text-info me-2"></i>Cloud &amp; DevOps</h5>
+                      <p>La nube es la infraestructura del futuro. Aprender a asegurar entornos cloud y automatizar procesos con DevSecOps es una prioridad en mi plan de desarrollo profesional.</p>
+                      <ul class="list-unstyled mb-3">
+                        <li class="mb-1"><i class="fas fa-check-circle text-success me-2"></i>AWS, Azure y Google Cloud Platform</li>
+                        <li class="mb-1"><i class="fas fa-check-circle text-success me-2"></i>Contenedores: Docker y Kubernetes</li>
+                        <li class="mb-1"><i class="fas fa-check-circle text-success me-2"></i>Cloud Security Architecture</li>
+                        <li class="mb-1"><i class="fas fa-check-circle text-success me-2"></i>DevSecOps — CI/CD seguro</li>
+                      </ul>
+                      <span class="badge bg-warning text-dark me-1">AWS SAA</span>
+                      <span class="badge bg-primary me-1">AZ-900</span>
+                      <span class="badge bg-danger">Docker</span>
+                    </div>
+                  </article>
+                </div>
+
+              </div>
+            </div>
+          </div><!-- /row áreas de interés -->
+        </section>
+
+      </div><!-- /col main content -->
+    </div><!-- /row -->
+  </main>
+
+  <!-- ================================================================
+       MODAL: CONTACTO RÁPIDO (Formulario dentro de Modal — REQUERIDO)
+       ================================================================ -->
+  <div class="modal fade" id="contactoModal" tabindex="-1" aria-labelledby="contactoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0 shadow-lg">
+        <div class="modal-header">
+          <h5 class="modal-title" id="contactoModalLabel">
+            <i class="fas fa-envelope me-2"></i>Contacto Rápido
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body p-4">
+          <p class="text-muted mb-4">¿Tienes una propuesta de colaboración, mentoría o proyecto? ¡Escríbeme!</p>
+          <form id="quickContactForm" action="#" method="GET">
+            <div class="mb-3">
+              <label for="modal_nombre" class="form-label">Tu Nombre *</label>
+              <input type="text" class="form-control" id="modal_nombre" name="modal_nombre"
+                placeholder="Nombre completo" required>
+            </div>
+            <div class="mb-3">
+              <label for="modal_email" class="form-label">Correo Electrónico *</label>
+              <input type="email" class="form-control" id="modal_email" name="modal_email"
+                placeholder="tu@correo.com" required>
+            </div>
+            <div class="mb-3">
+              <label for="modal_motivo" class="form-label">Motivo</label>
+              <select class="form-select" id="modal_motivo" name="modal_motivo">
+                <option value="">-- Selecciona --</option>
+                <option value="colaboracion">Propuesta de colaboración</option>
+                <option value="mentoria">Solicitud de mentoría</option>
+                <option value="proyecto">Proyecto conjunto</option>
+                <option value="empleo">Oportunidad laboral</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="modal_mensaje" class="form-label">Mensaje *</label>
+              <textarea class="form-control" id="modal_mensaje" name="modal_mensaje"
+                rows="4" placeholder="Cuéntame más..." required></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+            <i class="fas fa-times me-1"></i>Cancelar
+          </button>
+          <button type="submit" form="quickContactForm" class="btn btn-primary">
+            <i class="fas fa-paper-plane me-2"></i>Enviar Mensaje
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================================================================
+       FOOTER (etiqueta semántica)
+       ================================================================ -->
+  <footer class="footer mt-5">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-12 col-md-4 mb-3 mb-md-0">
+          <h5><i class="fas fa-graduation-cap me-2"></i>Educación</h5>
+          <p>Universidad de las Fuerzas Armadas ESPE<br>
+          Ingeniería en Tecnologías de la Información<br>
+          Ecuador 🇪🇨</p>
+        </div>
+        <div class="col-12 col-md-4 mb-3 mb-md-0">
+          <h5><i class="fas fa-sitemap me-2"></i>Navegación</h5>
+          <ul class="list-unstyled">
+            <li><a href="../index.html"><i class="fas fa-home me-1"></i>Home</a></li>
+            <li><a href="sobremi/sobremi.html"><i class="fas fa-user me-1"></i>Sobre mí</a></li>
+            <li><a href="proyectos/proyectos.html"><i class="fas fa-laptop-code me-1"></i>Proyectos</a></li>
+            <li><a href="cto/contacto.html"><i class="fas fa-envelope me-1"></i>Contacto</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4">
+          <h5><i class="fas fa-share-alt me-2"></i>Redes Sociales</h5>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/corina-alejandra-acosta-oliva-1555ba28a" target="_blank">
+              <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://github.com/Corina-ac" target="_blank">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://www.facebook.com/" target="_blank">
+              <i class="fab fa-facebook"></i> Facebook
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+              <i class="fab fa-instagram"></i> Instagram
+            </a>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <p class="text-center mb-0">&copy; 2026 Corina Alejandra Acosta Oliva &mdash; Fundamentos Web ESPE</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5.3 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // Inicializar el scrollspy de Bootstrap
+    const scrollSpy = new bootstrap.ScrollSpy(document.body, {
+      target: '#aside-nav',
+      offset: 120,
+      smoothScroll: true
+    });
+
+    // Resaltar enlaces del aside según el scroll
+    document.querySelectorAll('.aside-link').forEach(link => {
+      link.addEventListener('click', function (e) {
+        document.querySelectorAll('.aside-link').forEach(l => l.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+  </script>
+
+</body>
+</html>

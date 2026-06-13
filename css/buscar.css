@@ -1,0 +1,17 @@
+/* ================================================
+   BUSCAR CSS
+   Estilos específicos de la página de búsqueda
+   ================================================ */
+
+/* Contenedor del formulario de búsqueda */
+.search-box {
+  max-width: 640px;
+  margin: 0 auto 2rem;
+}
+
+/* Resultado de búsqueda destacado */
+.search-result-item {
+  border-left: 4px solid #008B8B;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
